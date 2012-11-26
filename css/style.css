@@ -3,7 +3,8 @@ body {
     height: 100%;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url('../images/tumblr_mboju6yVi01r92e4to2_1280.gif');
+    background-position: center;
+    /*background-image: url('../images/tumblr_mboju6yVi01r92e4to2_1280.gif');*/
     font-family: 'Helvetica Neue','Helvetica','Arial', sans-serif;
 }
 
