@@ -264,7 +264,7 @@ html[xmlns] .slides {display: block;}
 }
 
 
-/* ポートフォリオ */
+/* トップページ */
 
 #portfolio {
 
@@ -342,6 +342,13 @@ html[xmlns] .slides {display: block;}
 /* パーマリンク */
 .page-permalink {
 
+    /* Photo */
+    .post.photo {
+        .span8 {
+            margin-bottom: 10px;
+        }
+    }
+
     .meta {
         color: @light;
         margin-bottom: 20px;
@@ -416,6 +423,19 @@ html[xmlns] .slides {display: block;}
             
         }
     }
+
+    /* text */
+    .post.text {
+
+        .entry-title {
+            border-bottom: 1px solid @border;
+            a {
+                color: @base;
+            }
+        }
+
+    }
+
 
 }
 

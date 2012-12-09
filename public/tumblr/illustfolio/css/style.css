@@ -7552,7 +7552,7 @@ html[xmlns] .slides {
     display: none;
   }
 }
-/* ポートフォリオ */
+/* トップページ */
 #portfolio h2 {
   font-family: 'SourceSansProItalic', 'Helvetica Neue', sans-serif;
 }
@@ -7626,6 +7626,15 @@ html[xmlns] .slides {
   vertical-align: middle;
 }
 /* パーマリンク */
+.page-permalink {
+  /* Photo */
+
+  /* text */
+
+}
+.page-permalink .post.photo .span8 {
+  margin-bottom: 10px;
+}
 .page-permalink .meta {
   color: #999999;
   margin-bottom: 20px;
@@ -7703,6 +7712,12 @@ html[xmlns] .slides {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   margin-right: 3px;
+}
+.page-permalink .post.text .entry-title {
+  border-bottom: 1px solid #dddddd;
+}
+.page-permalink .post.text .entry-title a {
+  color: #4a4a4a;
 }
 /* ページャ */
 #pager {
