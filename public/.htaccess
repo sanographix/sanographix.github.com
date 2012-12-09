@@ -1,1 +1,5 @@
 header add Access-Control-Allow-Origin *
+AddType application/vnd.ms-fontobject  eot
+AddType application/x-font-ttf    ttf ttc
+AddType font/opentype                  otf
+AddType application/x-font-woff        woff
