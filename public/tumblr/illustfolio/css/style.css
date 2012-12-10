@@ -7429,6 +7429,9 @@ html[xmlns] .slides {
   background-position: center 20%;
   background-repeat: no-repeat;
 }
+.flexslider .flex-viewport {
+  width: 100%;
+}
 .flex-container a:active,
 .flexslider a:active,
 .flex-container a:focus,
