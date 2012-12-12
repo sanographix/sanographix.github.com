@@ -1,3 +1,4 @@
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,600italic";
 /*! normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
@@ -6542,8 +6543,8 @@ a.badge:hover {
     */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+  src: url('//sanographix.org/static/fonts/fontawesome/fontawesome-webfont.eot');
+  src: url('//sanographix.org/static/fonts/fontawesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('//sanographix.org/static/fonts/fontawesome/fontawesome-webfont.woff') format('woff'), url('//sanographix.org/static/fonts/fontawesome/fontawesome-webfont.ttf') format('truetype'), url('//sanographix.org/static/fonts/fontawesome/fontawesome-webfont.svg#FontAwesome') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -7239,24 +7240,37 @@ ul.icons li .icon-large:before {
    Author:sanographix
 */
 /* フォント */
+/*
 @font-face {
-  font-family: 'SourceSansProSemiboldItalic';
-  src: url('../fonts/SourceSansPro-SemiboldIt-webfont.eot');
-  src: url('../fonts/SourceSansPro-SemiboldIt-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/SourceSansPro-SemiboldIt-webfont.woff') format('woff'), url('../fonts/SourceSansPro-SemiboldIt-webfont.ttf') format('truetype'), url('../fonts/SourceSansPro-SemiboldIt-webfont.svg#SourceSansProSemiboldItalic') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'SourceSansProSemiboldItalic';
+    src: url('../fonts/SourceSansPro-SemiboldIt-webfont.eot');
+    src: url('../fonts/SourceSansPro-SemiboldIt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SourceSansPro-SemiboldIt-webfont.woff') format('woff'),
+         url('../fonts/SourceSansPro-SemiboldIt-webfont.ttf') format('truetype'),
+         url('../fonts/SourceSansPro-SemiboldIt-webfont.svg#SourceSansProSemiboldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
 @font-face {
-  font-family: 'SourceSansProItalic';
-  src: url('../fonts/SourceSansPro-It-webfont.eot');
-  src: url('../fonts/SourceSansPro-It-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/SourceSansPro-It-webfont.woff') format('woff'), url('../fonts/SourceSansPro-It-webfont.ttf') format('truetype'), url('../fonts/SourceSansPro-It-webfont.svg#SourceSansProItalic') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'SourceSansProItalic';
+    src: url('../fonts/SourceSansPro-It-webfont.eot');
+    src: url('../fonts/SourceSansPro-It-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SourceSansPro-It-webfont.woff') format('woff'),
+         url('../fonts/SourceSansPro-It-webfont.ttf') format('truetype'),
+         url('../fonts/SourceSansPro-It-webfont.svg#SourceSansProItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+*/
 /*common*/
 html,
 body {
-  font-family: 'SourceSansProItalic', 'Helvetica Neue', sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
   color: #4a4a4a;
   font-size: 0.9em;
   background: #fff;
@@ -7302,8 +7316,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'SourceSansProSemiboldItalic', 'Helvetica Neue', sans-serif;
-  font-weight: normal;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
 }
 h2 {
   margin-top: 0;
