@@ -893,3 +893,21 @@ article .notecontainer ol li .avatar {
     max-width: 288px;
   }
 }
+.c83banner {
+  margin-bottom: 30px;
+}
+.c83banner .mobile {
+  display: none;
+}
+@media screen and (max-width: 420px) {
+  .c83banner {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .c83banner .pc {
+    display: none;
+  }
+  .c83banner .mobile {
+    display: inline;
+  }
+}
