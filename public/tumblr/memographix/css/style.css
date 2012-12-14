@@ -918,6 +918,6 @@ article .notecontainer ol li .avatar {
     display: none;
   }
   .c83banner .mobile {
-    display: inline;
+    display: inline !important;
   }
 }
