@@ -94,14 +94,26 @@ h1,h2,h3,h4,h5 {
     }
 }
 
-* {
+h1,
+h2,
+h3,
+h4,
+p,
+.fade,
+article > * {
   opacity: 0;
   -webkit-transition: all 1s ease;
   -webkit-transform: translate(0, 10px);
   font-weight: normal;
 }
 
-.load > * {
+.load h1,
+.load h2,
+.load h3,
+.load h4,
+.load p,
+.load .fade,
+.load article > * {
   opacity: 1;
   -webkit-transform: translate(0, 0);
 }
