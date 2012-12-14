@@ -360,6 +360,19 @@ and (max-device-width : 480px) {
 // C83
 
 .c83banner {
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  -webkit-transform: translate(0, 10px);
+  font-weight: normal;
+}
+
+.load .c83banner {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+}
+
+
+.c83banner {
     margin-bottom: 30px;
     
     .mobile {
