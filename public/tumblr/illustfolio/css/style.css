@@ -7313,6 +7313,9 @@ h4 {
   margin-top: 0;
   font-size: 1.3em;
 }
+.bigger {
+  font-size: 120%;
+}
 /*ヘッダ*/
 body {
   border-top: 6px solid #369ecf;
