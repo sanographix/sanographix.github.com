@@ -649,7 +649,7 @@ LESS Mixins
 html,
 body {
   background-color: #ffffff;
-  font-family: 'Open Sans', 'Gothic MB101 Regular', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
+  font-family: 'Open Sans', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
   font-size: 100%;
   color: #454545;
 }
@@ -672,14 +672,6 @@ a {
 }
 a:hover {
   text-decoration: underline;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Open Sans', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
-  font-weight: bold;
 }
 h1 a,
 h2 a,
@@ -727,7 +719,7 @@ article > * {
   position: relative;
 }
 .header .blog-title {
-  font-family: 'CodeLightRegular', 'Gothic MB101 DemiBold', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
+  font-family: 'CodeLightRegular', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
   font-size: 50px;
   margin: 0;
   font-weight: normal;
@@ -765,7 +757,7 @@ article header {
   margin-bottom: 20px;
 }
 article header .entry-title {
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.5;
   margin: 15px 0;
   text-align: center;
