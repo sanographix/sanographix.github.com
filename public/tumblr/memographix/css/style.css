@@ -889,8 +889,9 @@ article .notecontainer ol li .avatar {
     font-size: 95%;
     margin-bottom: 50px;
   }
-  article header h1 {
+  article header .entry-title {
     margin: 0 0;
+    font-size: 24px;
     line-height: 1.3;
   }
   article .entry-content {
