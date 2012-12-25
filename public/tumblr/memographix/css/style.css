@@ -1,3 +1,4 @@
+@import "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700";
 /*! normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
@@ -647,7 +648,7 @@ LESS Mixins
 html,
 body {
   background-color: #f8f8f8;
-  font-family: 'Gothic Medium BBB', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
+  font-family: 'Open Sans', 'Gothic MB101 Regular', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
   font-size: 100%;
   color: #555555;
 }
@@ -672,8 +673,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Midashi Go MB31', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
-  font-weight: normal;
+  font-family: 'Open Sans', 'Gothic MB101 DemiBold', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
+  font-weight: bold;
 }
 h1 a,
 h2 a,
