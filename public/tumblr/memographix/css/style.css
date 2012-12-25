@@ -573,6 +573,7 @@ LESS Mixins
 }
 .alegreya {
   font-family: 'AlegreyaItalic', serif;
+  font-weight: normal;
 }
 /* tipsy */
 .tipsy {
@@ -693,7 +694,6 @@ article > * {
   opacity: 0;
   -webkit-transition: all 1s ease;
   -webkit-transform: translate(0, 10px);
-  font-weight: normal;
 }
 .load h1,
 .load h2,
@@ -717,6 +717,7 @@ article > * {
 }
 .header .blog-description {
   font-family: 'AlegreyaItalic', serif;
+  font-weight: normal;
   font-size: 85%;
   margin: 0;
   line-height: 1;
@@ -728,6 +729,7 @@ article > * {
   top: 35px;
   font-size: 85%;
   font-family: 'AlegreyaItalic', serif;
+  font-weight: normal;
 }
 .header nav a {
   text-decoration: none;
@@ -755,6 +757,7 @@ article header h1 .permalink {
 article header .tags {
   color: #999999;
   font-family: 'AlegreyaItalic', serif;
+  font-weight: normal;
   font-size: 85%;
   margin-bottom: 10px;
 }
@@ -800,6 +803,7 @@ article .entry-content .amazlet-box {
 article .entry-footer {
   color: #999999;
   font-family: 'AlegreyaItalic', serif;
+  font-weight: normal;
   font-size: 85%;
 }
 article .entry-footer a {
@@ -831,6 +835,7 @@ article .notecontainer ol li .avatar {
 #pager {
   margin-bottom: 50px;
   font-family: 'AlegreyaItalic', serif;
+  font-weight: normal;
   text-align: center;
 }
 #pager a {
