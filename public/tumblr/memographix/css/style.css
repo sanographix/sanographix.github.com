@@ -674,7 +674,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Open Sans', 'Gothic MB101 DemiBold', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
+  font-family: 'Open Sans', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
   font-weight: bold;
 }
 h1 a,
@@ -684,6 +684,8 @@ h4 a,
 h5 a {
   text-decoration: none;
 }
+/*
+
 h1,
 h2,
 h3,
@@ -695,6 +697,7 @@ article > * {
   -webkit-transition: all 1s ease;
   -webkit-transform: translate(0, 10px);
 }
+
 .load h1,
 .load h2,
 .load h3,
@@ -705,15 +708,18 @@ article > * {
   opacity: 1;
   -webkit-transform: translate(0, 0);
 }
+
+*/
 /* Header */
 .header {
   margin: 80px 0;
   position: relative;
 }
 .header .blog-title {
-  font-family: 'CodeLightRegular', 'Midashi Go MB31', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
+  font-family: 'CodeLightRegular', 'Gothic MB101 DemiBold', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
   font-size: 50px;
   margin: 0;
+  font-weight: normal;
 }
 .header .blog-description {
   font-family: 'AlegreyaItalic', serif;
