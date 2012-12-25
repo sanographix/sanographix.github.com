@@ -86,7 +86,11 @@ html,body {
 /* Text */
 
 a {
-    color: @link;
+    color: @base;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 h1,h2,h3,h4,h5 {
@@ -94,6 +98,10 @@ h1,h2,h3,h4,h5 {
     font-weight: bold;
     a {
         .nodeco;
+        &:hover {
+            text-decoration: none;
+        }
+
     }
 }
 
@@ -174,7 +182,7 @@ article {
         margin-bottom: 20px;
         
         .entry-title {
-            font-size: 30px;
+            font-size: 26px;
             line-height: 1.5;
             margin: 15px 0;
             text-align: center;
@@ -200,9 +208,16 @@ article {
     }
     
     .entry-content {
-            font-size: 100%;
-            line-height: 1.8;
-            margin-bottom: 20px;
+        font-size: 100%;
+        line-height: 1.8;
+        margin-bottom: 20px;
+
+        a {
+            color: @link;
+            &:hover {
+                color: @hover;
+            }
+        }
 
         img {
             max-width: 788px;
@@ -226,8 +241,6 @@ article {
             &[align="left"] {
                 margin: 0 1em 1em 0;
             }
-
-
         }
         
         .amazlet-box {
@@ -235,7 +248,17 @@ article {
             border: 1px solid @border;
             padding: 15px;
         }
-        
+
+        pre {
+            padding: 8px;
+            background-color: #f7f7f9;
+            border: 1px solid #e1e1e8;
+            .border-radius(5px);
+            code {
+                font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+                line-height: 1.5;
+            }
+        }
     }
     
     .entry-footer {
