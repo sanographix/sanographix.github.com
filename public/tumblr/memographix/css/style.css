@@ -648,10 +648,10 @@ LESS Mixins
 /* Common */
 html,
 body {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   font-family: 'Open Sans', 'Gothic MB101 Regular', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
   font-size: 100%;
-  color: #555555;
+  color: #444444;
 }
 #wrapper {
   border-top: 8px solid #666;
@@ -667,7 +667,7 @@ body {
 }
 /* Text */
 a {
-  color: #555555;
+  color: #444444;
 }
 h1,
 h2,
@@ -743,7 +743,7 @@ article > * {
   color: #999999;
 }
 .header nav a:hover {
-  color: #555555;
+  color: #444444;
 }
 /* Article */
 article {
@@ -751,14 +751,13 @@ article {
 }
 article header {
   border-bottom: 1px solid #dddddd;
+  margin-bottom: 20px;
 }
-article header h1 {
-  font-size: 24px;
+article header .entry-title {
+  font-size: 30px;
   line-height: 1.5;
-  margin: 10px 0;
-}
-article header h1 .permalink {
-  margin-right: 5px;
+  margin: 15px 0;
+  text-align: center;
 }
 article header .tags {
   color: #999999;
@@ -817,7 +816,7 @@ article .entry-footer a {
   text-decoration: none;
 }
 article .entry-footer a:hover {
-  color: #555555;
+  color: #444444;
 }
 article .entry-footer .notecount {
   margin-left: 10px;
@@ -851,7 +850,7 @@ article .notecontainer ol li .avatar {
   margin: 0 20px;
 }
 #pager a:hover {
-  color: #555555;
+  color: #444444;
 }
 @media screen and (max-width: 860px) {
   #wrapper #wrapper-inner {
