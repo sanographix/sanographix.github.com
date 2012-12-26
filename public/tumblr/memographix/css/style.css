@@ -820,6 +820,7 @@ article .entry-content .amazlet-box {
   padding: 15px;
 }
 article .entry-content pre {
+  font-size: 90%;
   padding: 8px;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
@@ -926,7 +927,7 @@ article .notecontainer ol li .avatar {
   }
   article {
     font-size: 95%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   article header .entry-title {
     font-size: 24px;
