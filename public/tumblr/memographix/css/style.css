@@ -667,7 +667,7 @@ body {
 }
 hr {
   height: 1px;
-  margin: 60px 0;
+  margin: 20px 0;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0));
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0));
   background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0));
@@ -759,16 +759,12 @@ article > * {
 }
 /* Article */
 article {
-  margin-bottom: 100px;
-}
-article header {
-  border-bottom: 1px solid #dddddd;
-  margin-bottom: 20px;
+  margin-bottom: 120px;
 }
 article header .entry-title {
   font-size: 24px;
   line-height: 1.5;
-  margin: 15px 0;
+  margin: 15px 0 0;
   text-align: center;
 }
 article header .tags {
