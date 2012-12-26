@@ -665,6 +665,15 @@ body {
 #tumblr_controls {
   top: 8px !important;
 }
+hr {
+  height: 1px;
+  margin: 60px 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0));
+  border: 0;
+}
 /* Text */
 a {
   color: #454545;
@@ -836,8 +845,6 @@ article .entry-content pre {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-}
-article .entry-content pre code {
   font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
   line-height: 1.5;
 }
