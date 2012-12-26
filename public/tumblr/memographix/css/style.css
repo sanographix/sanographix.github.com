@@ -845,6 +845,9 @@ article .entry-content pre {
   font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
   line-height: 1.5;
 }
+article .entry-content code {
+  font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+}
 article .entry-footer {
   color: #999999;
   font-family: 'AlegreyaItalic', serif;
