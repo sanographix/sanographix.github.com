@@ -578,6 +578,7 @@ LESS Mixins
 .alegreya {
   font-family: 'Droid Serif', serif;
   font-weight: normal;
+  font-style: italic;
 }
 /* tipsy */
 .tipsy {
@@ -740,6 +741,7 @@ article > * {
 .header .blog-description {
   font-family: 'Droid Serif', serif;
   font-weight: normal;
+  font-style: italic;
   font-size: 85%;
   margin: 0;
   line-height: 1;
@@ -752,6 +754,7 @@ article > * {
   font-size: 85%;
   font-family: 'Droid Serif', serif;
   font-weight: normal;
+  font-style: italic;
 }
 .header nav a {
   text-decoration: none;
@@ -775,6 +778,7 @@ article header .tags {
   color: #999999;
   font-family: 'Droid Serif', serif;
   font-weight: normal;
+  font-style: italic;
   font-size: 85%;
   margin-bottom: 10px;
 }
@@ -856,6 +860,7 @@ article .entry-footer {
   color: #999999;
   font-family: 'Droid Serif', serif;
   font-weight: normal;
+  font-style: italic;
   font-size: 85%;
 }
 article .entry-footer a {
@@ -888,6 +893,7 @@ article .notecontainer ol li .avatar {
   margin-bottom: 50px;
   font-family: 'Droid Serif', serif;
   font-weight: normal;
+  font-style: italic;
   text-align: center;
 }
 #pager a {
