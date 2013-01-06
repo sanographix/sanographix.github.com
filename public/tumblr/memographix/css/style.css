@@ -905,7 +905,7 @@ article .notecontainer ol li .avatar {
     max-width: 696px;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media (max-width: 480px) {
   #wrapper #wrapper-inner {
     width: auto;
     margin: 0 10px;
@@ -918,8 +918,8 @@ article .notecontainer ol li .avatar {
   }
   .header nav {
     position: static;
-    margin-top: 10px;
-    font-size: 100%;
+    margin-top: 20px;
+    font-size: 90%;
   }
   .header nav a {
     margin: 0 20px 0 0;
