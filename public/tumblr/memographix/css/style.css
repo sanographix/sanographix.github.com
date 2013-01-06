@@ -911,14 +911,14 @@ article .notecontainer ol li .avatar {
     margin: 0 10px;
   }
   .header {
-    margin: 30px 0;
+    margin: 30px 0 40px 0;
   }
   .header .blog-title {
-    font-size: 38px;
+    font-size: 34px;
   }
   .header nav {
     position: static;
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 90%;
   }
   .header nav a {
