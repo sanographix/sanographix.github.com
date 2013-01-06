@@ -1,7 +1,5 @@
 @import "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700";
 
-@import "http://fonts.googleapis.com/css?family=Lato:100";
-
 @import "http://fonts.googleapis.com/css?family=Droid+Serif:400italic";
 /*! normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
 /* =============================================================================
@@ -716,44 +714,15 @@ h4 a:hover,
 h5 a:hover {
   text-decoration: none;
 }
-/*
-
-h1,
-h2,
-h3,
-h4,
-p,
-.fade,
-article > * {
-  opacity: 0;
-  -webkit-transition: all 1s ease;
-  -webkit-transform: translate(0, 10px);
-}
-
-.load h1,
-.load h2,
-.load h3,
-.load h4,
-.load p,
-.load .fade,
-.load article > * {
-  opacity: 1;
-  -webkit-transform: translate(0, 0);
-}
-
-*/
 /* Header */
 .header {
   margin: 80px 0;
   position: relative;
 }
 .header .blog-title {
-  font-family: 'Lato', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.04em;
 }
 .header .blog-description {
   font-family: 'Droid Serif', serif;
