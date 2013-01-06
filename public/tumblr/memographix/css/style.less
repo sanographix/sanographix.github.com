@@ -5,6 +5,10 @@
 
 /* Fonts */
 
+/* 
+
+//google webfontにしたいので読まない
+
 @font-face {
     font-family: 'CodeLightRegular';
     src: url('//sanographix.org/static/fonts/code_light/code_light-webfont.eot');
@@ -28,6 +32,8 @@
     font-style: normal;
 
 }
+
+*/
 
 @import "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700";
 
@@ -156,7 +162,8 @@ article > * {
         font-size: 50px;
         margin: 0;
         font-weight: normal;
-        text-transform: uppercase;
+        text-transform: uppercase; //大文字にしてる
+        letter-spacing: -0.05em; // フォントの都合でちょっと詰める
     }
     
     .blog-description {

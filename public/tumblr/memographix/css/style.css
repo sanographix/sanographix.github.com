@@ -557,20 +557,35 @@ LESS Mixins
 }
 /* CSS3 properties */
 /* Fonts */
+/* 
+
+//google webfontにしたいので読まない
+
 @font-face {
-  font-family: 'CodeLightRegular';
-  src: url('//sanographix.org/static/fonts/code_light/code_light-webfont.eot');
-  src: url('//sanographix.org/static/fonts/code_light/code_light-webfont.eot?#iefix') format('embedded-opentype'), url('//sanographix.org/static/fonts/code_light/code_light-webfont.woff') format('woff'), url('//sanographix.org/static/fonts/code_light/code_light-webfont.ttf') format('truetype'), url('//sanographix.org/static/fonts/code_light/code_light-webfont.svg#CodeLightRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'CodeLightRegular';
+    src: url('//sanographix.org/static/fonts/code_light/code_light-webfont.eot');
+    src: url('//sanographix.org/static/fonts/code_light/code_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//sanographix.org/static/fonts/code_light/code_light-webfont.woff') format('woff'),
+         url('//sanographix.org/static/fonts/code_light/code_light-webfont.ttf') format('truetype'),
+         url('//sanographix.org/static/fonts/code_light/code_light-webfont.svg#CodeLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
+
 @font-face {
-  font-family: 'AlegreyaItalic';
-  src: url('//sanographix.org/static/fonts/alegreya/Alegreya-Italic-webfont.eot');
-  src: url('//sanographix.org/static/fonts/alegreya/Alegreya-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('//sanographix.org/static/fonts/alegreya/Alegreya-Italic-webfont.woff') format('woff'), url('//sanographix.org/static/fonts/alegreya/Alegreya-Italic-webfont.ttf') format('truetype'), url('//sanographix.org/static/fonts/alegreya/Alegreya-Italic-webfont.svg#AlegreyaItalic') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'AlegreyaItalic';
+    src: url('//sanographix.org/static/fonts/alegreya/Alegreya-Italic-webfont.eot');
+    src: url('//sanographix.org/static/fonts/alegreya/Alegreya-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//sanographix.org/static/fonts/alegreya/Alegreya-Italic-webfont.woff') format('woff'),
+         url('//sanographix.org/static/fonts/alegreya/Alegreya-Italic-webfont.ttf') format('truetype'),
+         url('//sanographix.org/static/fonts/alegreya/Alegreya-Italic-webfont.svg#AlegreyaItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+*/
 .helvetica {
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   font-weight: bold;
@@ -738,6 +753,7 @@ article > * {
   margin: 0;
   font-weight: normal;
   text-transform: uppercase;
+  letter-spacing: -0.05em;
 }
 .header .blog-description {
   font-family: 'Droid Serif', serif;
