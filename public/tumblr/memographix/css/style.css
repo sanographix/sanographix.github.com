@@ -737,12 +737,13 @@ article > * {
   font-size: 50px;
   margin: 0;
   font-weight: normal;
+  text-transform: uppercase;
 }
 .header .blog-description {
   font-family: 'Droid Serif', serif;
   font-weight: normal;
   font-style: italic;
-  font-size: 85%;
+  font-size: 80%;
   margin: 0;
   line-height: 1;
   color: #999999;
@@ -751,7 +752,7 @@ article > * {
   position: absolute;
   right: 0;
   top: 35px;
-  font-size: 85%;
+  font-size: 80%;
   font-family: 'Droid Serif', serif;
   font-weight: normal;
   font-style: italic;
@@ -779,7 +780,7 @@ article header .tags {
   font-family: 'Droid Serif', serif;
   font-weight: normal;
   font-style: italic;
-  font-size: 85%;
+  font-size: 80%;
   margin-bottom: 10px;
 }
 article header .tags a {
@@ -861,7 +862,7 @@ article .entry-footer {
   font-family: 'Droid Serif', serif;
   font-weight: normal;
   font-style: italic;
-  font-size: 85%;
+  font-size: 80%;
 }
 article .entry-footer a {
   color: #999999;
