@@ -102,6 +102,43 @@ hr {
     border: 0;
 }
 
+.btn,
+.more-link {
+    .inline-block;
+    text-align: center;
+    padding: 6px 15px;
+    cursor: pointer;
+    line-height: 1.5;
+    font-size: 12px;
+    .border-radius(3px);
+    overflow: hidden;
+    color: #fff !important;
+    text-decoration: none;
+    background: @dark;
+    &:hover {
+        background-color: @link;
+        text-decoration: none !important;
+    }
+}
+.btn.btn-primary {
+    background: @link;
+    border-color: #1d887a;
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
+    -moz-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
+    -webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
+    &:hover {
+        background: #049e93;
+        .box-shadow-inset(0,1px,0,rgba(255,255,255,0.4));
+    }
+}
+
+.btn.btn-large {
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 4px;
+}
+
 /* Text */
 
 a {
@@ -292,6 +329,39 @@ article {
     }
 
 }
+
+// entry-content内のtable
+
+.entry-content {
+    table {
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid @border;
+        .border-radius(3px);
+        border-collapse: collapse;
+    }
+    
+    th,
+    td {
+        padding: 10px;
+        text-align: left;
+        vertical-align: top;
+        border: 1px solid @border;
+        vertical-align: middle;
+    }
+    
+    th {
+        font-weight: bold;
+    }
+    
+    tr:last-child {
+        th,td {
+            border-bottom: none;
+        }
+    }
+}
+
+// pager
 
 #pager {
     margin-bottom: 50px;
