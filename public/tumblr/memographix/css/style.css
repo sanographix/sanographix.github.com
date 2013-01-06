@@ -1,4 +1,8 @@
 @import "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700";
+
+@import "http://fonts.googleapis.com/css?family=Lato:100";
+
+@import "http://fonts.googleapis.com/css?family=Droid+Serif:400italic";
 /*! normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
@@ -572,7 +576,7 @@ LESS Mixins
   font-weight: bold;
 }
 .alegreya {
-  font-family: 'AlegreyaItalic', serif;
+  font-family: 'Droid Serif', serif;
   font-weight: normal;
 }
 /* tipsy */
@@ -728,13 +732,13 @@ article > * {
   position: relative;
 }
 .header .blog-title {
-  font-family: 'CodeLightRegular', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
+  font-family: 'Lato', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
   font-size: 50px;
   margin: 0;
   font-weight: normal;
 }
 .header .blog-description {
-  font-family: 'AlegreyaItalic', serif;
+  font-family: 'Droid Serif', serif;
   font-weight: normal;
   font-size: 85%;
   margin: 0;
@@ -746,7 +750,7 @@ article > * {
   right: 0;
   top: 35px;
   font-size: 85%;
-  font-family: 'AlegreyaItalic', serif;
+  font-family: 'Droid Serif', serif;
   font-weight: normal;
 }
 .header nav a {
@@ -769,7 +773,7 @@ article header .entry-title {
 }
 article header .tags {
   color: #999999;
-  font-family: 'AlegreyaItalic', serif;
+  font-family: 'Droid Serif', serif;
   font-weight: normal;
   font-size: 85%;
   margin-bottom: 10px;
@@ -850,7 +854,7 @@ article .entry-content code {
 }
 article .entry-footer {
   color: #999999;
-  font-family: 'AlegreyaItalic', serif;
+  font-family: 'Droid Serif', serif;
   font-weight: normal;
   font-size: 85%;
 }
@@ -882,7 +886,7 @@ article .notecontainer ol li .avatar {
 }
 #pager {
   margin-bottom: 50px;
-  font-family: 'AlegreyaItalic', serif;
+  font-family: 'Droid Serif', serif;
   font-weight: normal;
   text-align: center;
 }
