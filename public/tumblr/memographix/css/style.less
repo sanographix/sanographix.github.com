@@ -194,79 +194,12 @@ article {
             
         }
         
-        .tags {
-            color: @light;
-            .alegreya;
-            font-size: 80%;
-            margin-bottom: 10px;
-            
-            a {
-                color: @light;
-                .nodeco;
-                margin-right: 10px;
-                &:hover {
-                    .underline;
-                }
-
-            }
-        }
-    }
-    
-    .entry-content {
-        font-size: 100%;
-        line-height: 1.8;
-        margin-bottom: 20px;
-
-        a {
-            color: @link;
-            &:hover {
-                color: @hover;
-            }
-        }
-
-        img {
-            max-width: 788px;
-            height: auto;
-            border: 1px solid @border;
-            padding: 5px;
-            background-color: #fcfcfc;
-
-            &.right {
-                float: right;
-                margin: 0 0 1em 1em;
-            }
-            &.left {
-                float: left;
-                margin: 0 1em 1em 0;
-            }
-
-            &[align="right"] {
-                margin: 0 0 1em 1em;
-            }
-            &[align="left"] {
-                margin: 0 1em 1em 0;
-            }
+        i { 
+            //アイコンフォント
+            font-size: 30px;
+            line-height: 1;
         }
         
-        .amazlet-box {
-            background: #fcfcfc;
-            border: 1px solid @border;
-            padding: 15px;
-        }
-
-        pre {
-            font-size: 90%;
-            padding: 8px;
-            background-color: #f7f7f9;
-            border: 1px solid #e1e1e8;
-            .border-radius(5px);
-            font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
-            line-height: 1.5;
-        }
-        
-        code {
-            font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
-        }
     }
     
     .entry-footer {
@@ -285,6 +218,23 @@ article {
         
         .notecount {
             margin-left: 10px;
+        }
+    }
+
+    .tags {
+        color: @light;
+        .alegreya;
+        font-size: 80%;
+        margin-bottom: 10px;
+        
+        a {
+            color: @light;
+            .nodeco;
+            margin-right: 10px;
+            &:hover {
+                .underline;
+            }
+
         }
     }
     
@@ -311,9 +261,64 @@ article {
 
 }
 
-// entry-content内のtable
+// entry-contentのテキストスタイル
 
 .entry-content {
+    font-size: 100%;
+    line-height: 1.8;
+    margin-bottom: 20px;
+
+    a {
+        color: @link;
+        &:hover {
+            color: @hover;
+        }
+    }
+
+    img {
+        max-width: 788px;
+        height: auto;
+        border: 1px solid @border;
+        padding: 5px;
+        background-color: #fcfcfc;
+
+        &.right {
+            float: right;
+            margin: 0 0 1em 1em;
+        }
+        &.left {
+            float: left;
+            margin: 0 1em 1em 0;
+        }
+
+        &[align="right"] {
+            margin: 0 0 1em 1em;
+        }
+        &[align="left"] {
+            margin: 0 1em 1em 0;
+        }
+    }
+    
+    .amazlet-box {
+        background: #fcfcfc;
+        border: 1px solid @border;
+        padding: 15px;
+    }
+
+    pre {
+        font-size: 90%;
+        padding: 8px;
+        background-color: #f7f7f9;
+        border: 1px solid #e1e1e8;
+        .border-radius(5px);
+        font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+        line-height: 1.5;
+    }
+    
+    code {
+        font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+    }
+
     table {
         width: 100%;
         margin-bottom: 10px;
