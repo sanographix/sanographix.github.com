@@ -562,6 +562,14 @@ LESS Mixins
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
+[class*="fontawesome-"],
+[class*="entypo-"] {
+  font-style: italic;
+  font-weight: normal;
+  vertical-align: text-top;
+  line-height: 1;
+  font-size: 130%;
+}
 .helvetica {
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   font-weight: bold;
@@ -795,10 +803,6 @@ article header .entry-title {
   margin: 15px 0 0;
   text-align: center;
 }
-article header i {
-  font-size: 30px;
-  line-height: 1;
-}
 article .entry-footer {
   color: #999999;
   font-family: 'Droid Serif', serif;
@@ -952,6 +956,10 @@ article .notecontainer ol li .avatar {
 .entry-content tr:last-child th,
 .entry-content tr:last-child td {
   border-bottom: none;
+}
+.post.quote .entry-content {
+  font-size: 130%;
+  line-height: 1.5;
 }
 #pager {
   margin-bottom: 50px;

@@ -20,6 +20,16 @@
   font-family: 'entypo', sans-serif;
 }
 
+[class*="fontawesome-"],
+[class*="entypo-"] {
+    font-style: italic;
+    font-weight: normal;
+    vertical-align: text-top;
+    line-height: 1;
+    font-size: 130%;
+}
+
+
 
 .helvetica {
     font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
@@ -193,13 +203,7 @@ article {
             text-align: center;
             
         }
-        
-        i { 
-            //アイコンフォント
-            font-size: 30px;
-            line-height: 1;
-        }
-        
+
     }
     
     .entry-footer {
@@ -344,6 +348,15 @@ article {
         th,td {
             border-bottom: none;
         }
+    }
+}
+
+// quote
+
+.post.quote {
+    .entry-content {
+        font-size: 130%;
+        line-height: 1.5;
     }
 }
 
