@@ -36,7 +36,7 @@
     .bold;
 }
 
-.alegreya {
+.font-serif {
     font-family: 'Droid Serif', serif;
     font-weight: normal;
     font-style: italic;
@@ -163,7 +163,7 @@ h1,h2,h3,h4,h5 {
     }
     
     .blog-description {
-        .alegreya;
+        .font-serif;
         font-size: 80%;
         margin: 0;
         line-height: 1;
@@ -175,7 +175,7 @@ h1,h2,h3,h4,h5 {
         right: 0;
         top: 35px;
         font-size: 80%;
-        .alegreya;
+        .font-serif;
         
         a {
             .nodeco;
@@ -213,36 +213,23 @@ article {
     
     .entry-footer {
         color: @light;
-        .alegreya;
+        .font-serif;
         font-size: 80%;
         
         a {
             color: @light;
             .nodeco;
+            
+            &:hover {
+                color: @base;
+            }
         }
         
-        .notecount {
+        span {
             margin-left: 10px;
         }
     }
 
-    .tags {
-        color: @light;
-        .alegreya;
-        font-size: 80%;
-        margin-bottom: 10px;
-        
-        a {
-            color: @light;
-            .nodeco;
-            margin-right: 10px;
-            &:hover {
-                .underline;
-            }
-
-        }
-    }
-    
     .notecontainer {
         margin: 30px 0;
         
@@ -365,7 +352,7 @@ article {
 
 #pager {
     margin-bottom: 50px;
-    .alegreya;
+    .font-serif;
     text-align: center;
 
     a {
