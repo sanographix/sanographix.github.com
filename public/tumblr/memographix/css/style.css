@@ -968,6 +968,12 @@ article .notecontainer ol li .avatar {
 #pager a:hover {
   color: #454545;
 }
+.copyright {
+  margin: 20px 0;
+  font-size: 70%;
+  text-align: center;
+  color: #999999;
+}
 @media screen and (max-width: 860px) {
   #wrapper #wrapper-inner {
     width: auto;
