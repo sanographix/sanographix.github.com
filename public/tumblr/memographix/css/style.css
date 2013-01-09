@@ -974,6 +974,13 @@ article .notecontainer ol li .avatar {
   text-align: center;
   color: #999999;
 }
+.copyright a {
+  color: #999999;
+  text-decoration: none;
+}
+.copyright a:hover {
+  color: #454545;
+}
 @media screen and (max-width: 860px) {
   #wrapper #wrapper-inner {
     width: auto;
