@@ -822,8 +822,9 @@ article .entry-footer a:hover {
 }
 article .entry-footer .meta {
   margin: 15px 0;
+  line-height: 1.7;
 }
-article .entry-footer span {
+article .entry-footer .meta-elements {
   margin-right: 10px;
 }
 article .notecontainer {
