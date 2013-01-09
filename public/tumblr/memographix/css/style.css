@@ -820,8 +820,11 @@ article .entry-footer a {
 article .entry-footer a:hover {
   color: #454545;
 }
+article .entry-footer .meta {
+  margin: 15px 0;
+}
 article .entry-footer span {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 article .notecontainer {
   margin: 30px 0;
