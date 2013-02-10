@@ -1,3 +1,7 @@
 /*
     Fuck-IE
 */
+
+#spec .button-buy .btn-large {
+    *width: 260px; /* border-boxきかないので */
+}
