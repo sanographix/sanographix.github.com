@@ -7004,6 +7004,8 @@ h6 a:hover {
   border-top: none;
   border-left: none;
   border-right: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .navbar-inner .brand {
   font-weight: bold;
