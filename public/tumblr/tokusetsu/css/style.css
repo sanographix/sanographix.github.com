@@ -6241,8 +6241,8 @@ a.badge:hover {
     */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../font/fontawesome/fontawesome-webfont.eot');
-  src: url('../font/fontawesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../font/fontawesome/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome/fontawesome-webfont.svg#FontAwesome') format('svg');
+  src: url('//sanographix.org/static/fonts/fontawesome-3.0//fontawesome-webfont.eot');
+  src: url('//sanographix.org/static/fonts/fontawesome-3.0//fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('//sanographix.org/static/fonts/fontawesome-3.0//fontawesome-webfont.woff') format('woff'), url('//sanographix.org/static/fonts/fontawesome-3.0//fontawesome-webfont.ttf') format('truetype'), url('//sanographix.org/static/fonts/fontawesome-3.0//fontawesome-webfont.svg#FontAwesome') format('svg');
   font-weight: normal;
   font-style: normal;
 }
