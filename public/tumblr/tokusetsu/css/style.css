@@ -7401,6 +7401,9 @@ h6 a:hover {
   #spec .table {
     width: 100%;
   }
+  #spec .table th {
+    min-width: 60px;
+  }
   #nicovideo embed {
     width: 100%;
   }
