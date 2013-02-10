@@ -1,0 +1,384 @@
+/*
+    Main CSS
+*/
+
+@import "_normalize.less";
+@import "_mixin.less";
+@import "_variable.less";
+@import "_font.less";
+@import "_bootstrap.less";
+@import "_bootstrap-responsive.less";
+@import "_font-awesome.less";
+
+
+
+/* Primary Styles */
+
+// Common
+
+html,
+body {
+    font-family: ;
+    background: @bg-light;
+    color: @base;
+}
+
+a {
+    color: @link;
+
+    &:hover {
+        color: @hover;
+    }
+
+}
+
+::selection {
+    background: @selection;
+    color:#fff;
+}
+
+::-moz-selection {
+    background: @selection;
+    color:#fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    a,a:hover {
+        color: @base;
+        text-decoration: none;
+    }
+}
+
+.btn-primary {
+    background-color: @btn-primary !important;
+    .gradient(@btn-primary,@btn-primary,@btn-primary) !important;
+    &:hover {
+        background: @btn-primary-hover !important;
+    }
+}
+
+// navbar
+
+.navbar-inner {
+    .border-radius(0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    .brand {
+        font-weight: bold;
+    }
+
+    .social-button {
+        padding: 10px 5px 10px;
+        height: 20px;
+        a {
+            padding: 0 !important;
+        }
+    }
+
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+// wrapper
+
+.wrapper {
+    background: #fff;
+    .border-radius(8px);
+    .box-shadow(0,1px,3px,rgba(0,0,0,.2));
+
+    .header-image {
+        .border-radius(8px,0,0,8px);
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+    .page-header {
+        margin-top: 0;
+        border-color: @border;
+        margin-bottom: 20px;
+        h1 {
+            font-size: 30px;
+            margin: 0;
+        }
+    }
+
+}
+
+// social-buttons
+
+.social-buttons {
+    margin-bottom: 0;
+
+    .navbar-inner {
+        border-top: 1px solid @border;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .nav {
+        float: none;
+        text-align: center;
+        margin: 0 0 0 0;
+
+        li {
+            .inline-block;
+            float: none !important;
+        }
+
+        .btn {
+            color: #fff;
+            .text-shadow(0,-1px,0,rgba(0,0,0,.2));
+            padding: 4px 10px;
+            font-size: 12px;
+            margin: 0 0 0 0;
+            position: relative;
+            top: -3px;
+            &:hover {
+                color: #fff;
+            }
+        }
+
+    }
+
+    iframe,
+    .fb-like {
+        vertical-align: text-bottom;
+        display: inline-block;
+    }
+}
+
+// table
+
+.table {
+    th,td {
+        padding: 15px 8px;
+    }
+
+    th {
+        font-size: 90%;
+    }
+
+}
+
+.table tr:first-child {
+    th,td{
+        border-top: 0;
+    }
+}
+
+// spec
+
+#spec {
+    .clearfix;
+
+    .introduction {
+        margin: 0 0 30px;
+    }
+
+    .jacket-image {
+        width: 300px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        float: left;
+
+        img {
+            .box-shadow(0,2px,5px,rgba(0,0,0,.5));
+        }
+    }
+
+    .jacket-noimage {
+        width: 298px;
+        border: 1px solid @border;
+        background: #f4f4f4;
+        line-height: 298px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: #ccc;
+        .text-shadow(0,1px,0,#fff);
+    }
+
+    .button-buy {
+        margin-top: 15px;
+
+        .btn-large {
+            width: 100%;
+            .border-box;
+        }
+    }
+
+    .table {
+        flat: left;
+        width: 560px;
+    }
+
+}
+
+// track list
+
+#tracklist {
+    .track-number {
+        width: 1.5em;
+        font-style: italic;
+        color: @link;
+    }
+
+    .track-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .track-meta {
+        font-size: 90%;
+        margin-left: 1.5em;
+        color: @light;
+    }
+}
+
+// staff
+
+.thumbnails {
+
+    li {
+        border-bottom: 1px solid #ddd;
+        max-height: 80px;
+
+        dt {
+            font-size: 90%;
+            font-weight: normal;
+            margin-bottom: .5em;
+            color: @link;
+        }
+
+        dd {
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 0;
+
+            .website {
+                font-weight: normal;
+                font-size: 12px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .span3 {
+        width: 205px;
+    }
+}
+
+// banner
+
+#banner {
+    .banner-box {
+        margin: 0 5px;
+
+        img {
+            vertical-align: top;
+        }
+    }
+}
+
+// Footer
+
+#footer {
+    text-align: center;
+    color: @light;
+    font-size: 12px;
+    line-height: 1.6;
+    padding-bottom: 20px;
+}
+
+
+// theme-dark
+
+.theme-dark {
+    background: @bg-dark;
+
+    .navbar-inner {
+        .gradient(#555555,#555555,#444444);
+        color: #999;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #222;
+
+        .brand {
+            .text-shadow(0,-1px,0,#222);
+            &:hover {
+                color: #aaa;
+            }
+        }
+
+        .nav li a {
+            color: #999;
+            .text-shadow(0,-1px,0,#222);
+            &:hover {
+                color: #aaa;
+            }
+        }
+
+        .btn {
+            .text-shadow(0,-1px,0,rgba(0,0,0,.2)) !important;
+            color: #fff !important;
+        }
+    }
+}
+
+// 固定ページ（entry-contentのテキストスタイル）
+
+.entry-content {
+    font-size: 100%;
+    line-height: 1.8;
+    margin-bottom: 20px;
+
+    a {
+        color: @link;
+        &:hover {
+            color: @hover;
+        }
+    }
+
+    img {
+        &[align="right"] {
+            margin: 0 0 1em 1em;
+        }
+        &[align="left"] {
+            margin: 0 1em 1em 0;
+        }
+    }
+
+    p {
+        margin: 1em 0;
+    }
+
+    h1, h2, h3 {
+        line-height: 1.5;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin: 0.83em 0;
+    }
+
+    h3 {
+        font-size: 1.17em;
+        margin: 1em 0;
+    }
+
+    .amazlet-box {
+        background: #fcfcfc;
+        border: 1px solid @border;
+        padding: 15px;
+    }
+
+}
+
+/* End Primary Styles */
+
+@import "_media-queries.less";
+@import "_retina.less";
