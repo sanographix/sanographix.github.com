@@ -7015,11 +7015,6 @@ h6 a:hover {
 .navbar-inner .social-button a {
   padding: 0 !important;
 }
-.navbar-inner iframe,
-.navbar-inner .fb-like {
-  vertical-align: text-bottom;
-  display: inline-block;
-}
 .section {
   margin-bottom: 40px;
 }
@@ -7076,13 +7071,43 @@ h6 a:hover {
   font-size: 30px;
   margin: 0;
 }
-.menu {
+.social-buttons {
   margin-bottom: 0;
 }
-.menu .navbar-inner {
+.social-buttons .navbar-inner {
   border-top: 1px solid #dddddd;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.social-buttons .nav {
+  float: none;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+.social-buttons .nav li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  float: none !important;
+}
+.social-buttons .nav .btn {
+  color: #fff;
+  -moz-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  padding: 4px 10px;
+  font-size: 12px;
+  margin: 0 0 0 0;
+  position: relative;
+  top: -3px;
+}
+.social-buttons .nav .btn:hover {
+  color: #fff;
+}
+.social-buttons iframe,
+.social-buttons .fb-like {
+  vertical-align: text-bottom;
+  display: inline-block;
 }
 .table th,
 .table td {
