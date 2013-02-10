@@ -6979,6 +6979,9 @@ h6 a:hover {
 .btn-primary:hover {
   background: #018fb2 !important;
 }
+#tumblr_controls {
+  display: none !important;
+}
 .navbar-inner {
   -webkit-border-top-right-radius: 0;
   -webkit-border-bottom-right-radius: 0;
@@ -7169,6 +7172,9 @@ h6 a:hover {
 #spec .table {
   flat: left;
   width: 560px;
+}
+#spec ul li {
+  list-style-type: circle;
 }
 #tracklist .track-number {
   width: 1.5em;
