@@ -7172,6 +7172,7 @@ h6 a:hover {
 #spec .table {
   flat: left;
   width: 560px;
+  margin-bottom: 0;
 }
 #spec ul li {
   list-style-type: circle;
