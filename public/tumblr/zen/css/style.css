@@ -487,7 +487,67 @@ LESS Variables
 /* Text highlighted color */
 /* Button Color */
 /* Blue button color  */
-/* Blue button color(hover)  *//*  Font Awesome
+/* Blue button color(hover)  */.btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 4px 10px 4px;
+  margin-bottom: 0;
+  line-height: 18px;
+  color: #999999;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: none !important;
+  border: 1px solid #ddd;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.btn:hover {
+  border-color: #bbb;
+  color: #666;
+  text-decoration: none !important;
+}
+.btn-blue,
+.btn-primary {
+  color: #fff !important;
+  background: #14afd6;
+}
+.btn-blue:hover,
+.btn-primary:hover {
+  background: #129fc2;
+}
+.btn-small {
+  padding: 2px 10px !important;
+  font-size: 11px !important;
+}
+.btn-large {
+  padding: 13px 19px;
+  font-size: 17px;
+  line-height: normal;
+  font-weight: bold;
+}
+/*  Font Awesome
     the iconic font designed for use with Twitter Bootstrap
     -------------------------------------------------------
     The full suite of pictographic icons, examples, and documentation
@@ -512,8 +572,8 @@ LESS Variables
     */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('//sanographix.org/static/fonts/fontawesome-3.0/fontawesome-webfont.eot');
-  src: url('//sanographix.org/static/fonts/fontawesome-3.0/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('//sanographix.org/static/fonts/fontawesome-3.0/fontawesome-webfont.woff') format('woff'), url('//sanographix.org/static/fonts/fontawesome-3.0/fontawesome-webfont.ttf') format('truetype'), url('//sanographix.org/static/fonts/fontawesome-3.0/fontawesome-webfont.svg#FontAwesome') format('svg');
+  src: url('http://sanographix.org/static/fonts/fontawesome-3.0/fontawesome-webfont.eot');
+  src: url('http://sanographix.org/static/fonts/fontawesome-3.0/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('http://sanographix.org/static/fonts/fontawesome-3.0/fontawesome-webfont.woff') format('woff'), url('http://sanographix.org/static/fonts/fontawesome-3.0/fontawesome-webfont.ttf') format('truetype'), url('http://sanographix.org/static/fonts/fontawesome-3.0/fontawesome-webfont.svg#FontAwesome') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1205,6 +1265,76 @@ ul.icons li .icon-large:before {
 .icon-user-md:before {
   content: "\f200";
 }
+/* tipsy */
+.tipsy {
+  padding: 5px;
+  font-size: 10px;
+  position: absolute;
+  z-index: 100000;
+}
+.tipsy-inner {
+  padding: 5px 8px 4px 8px;
+  background-color: black;
+  color: white;
+  max-width: 200px;
+  text-align: center;
+  line-height: 1.5;
+}
+.tipsy-inner {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.tipsy-arrow {
+  position: absolute;
+  background: url('http://static.tumblr.com/xlsgtjb/fd9m4sfih/tipsy.gif') no-repeat top left;
+  width: 9px;
+  height: 5px;
+}
+.tipsy-n .tipsy-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -4px;
+}
+.tipsy-nw .tipsy-arrow {
+  top: 0;
+  left: 10px;
+}
+.tipsy-ne .tipsy-arrow {
+  top: 0;
+  right: 10px;
+}
+.tipsy-s .tipsy-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -4px;
+  background-position: bottom left;
+}
+.tipsy-sw .tipsy-arrow {
+  bottom: 0;
+  left: 10px;
+  background-position: bottom left;
+}
+.tipsy-se .tipsy-arrow {
+  bottom: 0;
+  right: 10px;
+  background-position: bottom left;
+}
+.tipsy-e .tipsy-arrow {
+  top: 50%;
+  margin-top: -4px;
+  right: 0;
+  width: 5px;
+  height: 9px;
+  background-position: top right;
+}
+.tipsy-w .tipsy-arrow {
+  top: 50%;
+  margin-top: -4px;
+  left: 0;
+  width: 5px;
+  height: 9px;
+}
 /* Primary Styles */
 html,
 body {
@@ -1242,28 +1372,72 @@ h6 a:hover {
   color: #333333;
   text-decoration: none;
 }
+.btn {
+  font-weight: normal;
+}
 #header {
-  margin: 0 0 50px 0;
+  margin: 20px 0 50px 0;
   border-bottom: 1px solid #dddddd;
   letter-spacing: .2em;
+  padding-bottom: 30px;
+  display: block;
+  *zoom: 1;
+}
+#header:after {
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  content: ".";
 }
 #header .blog-title {
   font-size: 26px;
+  line-height: 40px;
   margin: 0;
   font-weight: normal;
-  padding: 20px 0 40px 0;
+  padding: 0px 0 0 0;
 }
 #header .blog-description {
   font-size: 11px;
-  margin: 0;
+  margin: 10px 0 0 0;
   font-weight: normal;
   color: #999999;
+  clear: both;
+}
+#header .profile-image {
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+  float: left;
+  margin-right: 10px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .mobile-nav-panel {
   display: none;
   padding: 15px 0;
   border-bottom: 1px solid #dddddd;
   margin-bottom: 10px;
+}
+.mobile-nav-panel i {
+  cursor: pointer;
 }
 .nav {
   margin: 20px 0 10px;
@@ -1310,14 +1484,17 @@ h6 a:hover {
   color: #999999;
 }
 .post {
-  padding-bottom: 80px;
-  margin-bottom: 80px;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
   border-bottom: 1px solid #dddddd;
 }
 .post .entry-title {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: normal;
   margin: 0 0 20px 0;
+}
+.post .hatena-star-star-container {
+  padding: 0 5px;
 }
 .content_source {
   font-size: 80%;
@@ -1328,12 +1505,15 @@ h6 a:hover {
   font-size: 75%;
   color: #999999;
 }
+.entry-footer .meta {
+  margin-bottom: 20px;
+}
 .entry-footer .meta .timeago a,
 .entry-footer .meta .notecount a {
   color: #999999;
 }
 .notecontainer {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 .notecontainer ol {
   margin: 0;
@@ -1369,23 +1549,30 @@ h6 a:hover {
   background-clip: padding-box;
 }
 .social-buttons {
+  display: block;
+  *zoom: 1;
   margin: 0;
   padding: 0;
-  display: none;
+}
+.social-buttons:after {
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  content: ".";
 }
 .social-buttons li {
   float: left;
   margin-right: 15px;
   list-style: none;
 }
-.panel-social-button {
-  cursor: pointer;
-}
 .entry-content {
   font-size: 95%;
   line-height: 1.7;
   margin-bottom: 20px;
   font-family: 'Helvetica Neue', 'Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #555;
 }
 .entry-content p {
   margin: 0 0 1em 0;
@@ -1550,13 +1737,15 @@ h6 a:hover {
   font-weight: bold;
 }
 #pager {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   text-align: center;
+  border-bottom: 1px solid #dddddd;
 }
 #pager a {
   color: #999999;
   text-decoration: none;
-  font-size: 120%;
+  font-size: 80%;
+  letter-spacing: .2em;
   margin: 0 20px;
 }
 #pager a:hover {
@@ -1565,12 +1754,18 @@ h6 a:hover {
 #footer {
   padding: 30px 0;
   text-align: right;
-  border-top: 1px solid #dddddd;
   font-size: 70%;
   color: #999999;
 }
 #footer .copyright {
   margin-right: 1em;
+}
+.tagged {
+  font-weight: normal;
+  margin-top: 0;
+  font-size: 90%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dddddd;
 }
 /* End Primary Styles */
 /*--------------------------------------------------------------
@@ -1610,6 +1805,7 @@ h6 a:hover {
 @media (max-width: 767px) {
   #container {
     width: 90%;
+    word-wrap: break-word;
   }
   .mobile-nav-panel {
     display: block;
@@ -1643,13 +1839,24 @@ h6 a:hover {
   }
   .post {
     font-size: 95%;
-    word-wrap: break-word;
   }
   .post .entry-title {
-    font-size: 20px;
+    font-size: 22px;
   }
   .post iframe {
     width: 100% !important;
+  }
+  .social-buttons li {
+    float: none;
+    padding: 8px 0;
+    margin-right: 0px;
+  }
+  #footer {
+    text-align: center;
+  }
+  #footer span {
+    display: block;
+    margin: 0;
   }
 }
 /*--------------------------------------------------------------

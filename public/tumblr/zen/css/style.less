@@ -5,7 +5,10 @@
 @import "_normalize.less";
 @import "_mixin.less";
 @import "_variable.less";
+@import "_button.less";
 @import "_font-awesome.less";
+@import "_tipsy.less";
+
 
 /* Primary Styles */
 
@@ -46,25 +49,43 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+.btn {
+    font-weight: normal;
+}
+
+
 //header
 
 #header {
-    margin: 0 0 50px 0;
+    margin: 20px 0 50px 0;
     border-bottom: 1px solid @border;
     letter-spacing: .2em;
+    padding-bottom: 30px;
+    .clearfix;
 
     .blog-title {
         font-size: 26px;
+        line-height: 40px;
         margin: 0;
         font-weight: normal;
-        padding: 20px 0 40px 0;
+        padding: 0px 0 0 0;
     }
 
     .blog-description {
         font-size: 11px;
-        margin: 0;
+        margin: 10px 0 0 0;
         font-weight: normal;
         color: @light;
+        clear: both;
+    }
+
+    .profile-image {
+        width: 40px;
+        height: auto;
+        vertical-align: middle;
+        float: left;
+        margin-right: 10px;
+        .border-radius(3px);
     }
 
 }
@@ -74,6 +95,10 @@ h1,h2,h3,h4,h5,h6 {
     padding: 15px 0;
     border-bottom: 1px solid @border;
     margin-bottom: 10px;
+
+    i {
+        cursor: pointer;
+    }
 }
 
 .nav {
@@ -130,13 +155,18 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .post {
-    padding-bottom: 80px;
-    margin-bottom: 80px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
     border-bottom: 1px solid @border;
+
     .entry-title {
-        font-size: 24px;
+        font-size: 26px;
         font-weight: normal;
         margin: 0 0 20px 0;
+    }
+
+    .hatena-star-star-container {
+        padding: 0 5px;
     }
 }
 
@@ -151,6 +181,8 @@ h1,h2,h3,h4,h5,h6 {
     color: @light;
 
     .meta {
+        margin-bottom: 20px;
+
         .timeago,
         .notecount {
             a {
@@ -162,7 +194,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .notecontainer {
-    margin: 30px 0;
+    margin: 20px 0;
 
     ol {
         margin: 0;
@@ -188,9 +220,9 @@ h1,h2,h3,h4,h5,h6 {
 
 // ソーシャルボタン
 .social-buttons {
+    .clearfix;
     margin: 0;
     padding: 0;
-    display: none;
 
     li {
         float: left;
@@ -199,11 +231,6 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-.panel-social-button {
-    cursor: pointer;
-}
-
-
 // entry-content textstyle
 
 .entry-content {
@@ -211,6 +238,7 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.7;
     margin-bottom: 20px;
     font-family: 'Helvetica Neue','Arial','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+    color: #555;
 
     p {
         margin: 0 0 1em 0;
@@ -353,13 +381,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #pager {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     text-align: center;
+    border-bottom: 1px solid @border;
 
     a {
         color: @light;
         text-decoration: none;
-        font-size: 120%;
+        font-size: 80%;
+        letter-spacing: .2em;
         margin: 0 20px;
 
         &:hover {
@@ -374,13 +404,22 @@ h1,h2,h3,h4,h5,h6 {
 #footer {
     padding: 30px 0;
     text-align: right;
-    border-top: 1px solid @border;
     font-size: 70%;
     color: @light;
 
     .copyright {
         margin-right: 1em;
     }
+}
+
+// タグページ
+
+.tagged {
+    font-weight: normal;
+    margin-top: 0;
+    font-size: 90%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid @border;
 }
 
 /* End Primary Styles */
