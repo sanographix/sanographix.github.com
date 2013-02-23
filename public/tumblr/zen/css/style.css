@@ -1496,6 +1496,9 @@ h6 a:hover {
 .post .hatena-star-star-container {
   padding: 0 5px;
 }
+.post .caption {
+  margin-top: 20px;
+}
 .content_source {
   font-size: 80%;
   color: #999999;
