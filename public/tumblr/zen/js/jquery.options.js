@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#youtube-iframe").fitVids();
+    $(".video-iframe").fitVids();
 
     $(".mobile-nav-panel").click(function(){
       $(".nav").toggleClass("active");
