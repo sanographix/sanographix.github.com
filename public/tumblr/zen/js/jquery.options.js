@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#youtube-iframe").fitVids();
 
-    $(".mobile-nav-panel i").click(function(){
+    $(".mobile-nav-panel").click(function(){
       $(".nav").toggleClass("active");
     });
 

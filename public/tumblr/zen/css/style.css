@@ -1804,7 +1804,7 @@ h6 a:hover {
 --------------------------------------------------------------*/
 @media (max-width: 767px) {
   #container {
-    width: 90%;
+    width: 93.75%;
     word-wrap: break-word;
     overflow: hidden;
   }
