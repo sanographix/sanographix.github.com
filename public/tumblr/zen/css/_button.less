@@ -27,10 +27,10 @@
 
 .btn-primary {
     color: #fff !important;
-    .gradient(#49aad7,#49aad7,@link);
+    .gradient(@btn-gradient-top,@btn-gradient-top,@btn-gradient-bottom);
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     &:hover {
-        .gradient(@link,#49aad7,@hover);
+        .gradient(@btn-hover-gradient-bottom,@btn-gradient-top,@btn-hover-gradient-bottom);
     }
 }
 
