@@ -26,7 +26,7 @@ $(document).ready(function(){
     if ($(window).width() < 480) {
 
       $('iframe.photoset').contents().find('.photoset_row').css({
-        width : 'auto',
+        width : '300px',
         height : 'auto',
       });
       $('iframe.photoset').contents().find('.photoset_row img').css('width', '300px');
