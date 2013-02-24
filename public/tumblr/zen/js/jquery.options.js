@@ -26,13 +26,12 @@ $(document).ready(function(){
     if ($(window).width() < 480) {
 
       $('iframe.photoset').contents().find('.photoset_row').css({
-        width : '300px',
+        width : 'auto',
         height : 'auto',
       });
       $('iframe.photoset').contents().find('.photoset_row img').css('width', '300px');
 
-      // Photoset のとき高さを自動調整する (jQuery iframe auto height plugin)
-      $('iframe.photoset').iframeAutoHeight();
+      $('iframe.photoset').css('height', $('iframe.photoset').contents().find('body').height() + 'px');
 
     }
 
