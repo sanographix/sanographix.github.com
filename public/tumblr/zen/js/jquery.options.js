@@ -19,4 +19,17 @@ $(document).ready(function(){
     $('.hatena-star-add-button').attr("title","★をつける");
   },3000);
 
+
+  $(window).load(function(){
+
+    // スマホでphotosetの中をwidth100%にする
+    if ($(window).width() < 481) {
+
+      $('iframe.photoset').contents().find('.photoset_row img').css('width', '100% !important');
+
+    }
+
+  });
+
+
 });
