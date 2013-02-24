@@ -27,10 +27,13 @@ $(document).ready(function(){
 
       $('iframe.photoset').contents().find('.photoset_row').css({
         width : 'auto',
-        height : 'auto',
+        height : 'auto'
       });
 
-      $('iframe.photoset').contents().find('.photoset_photo').css('display', 'block');
+      $('iframe.photoset').contents().find('.photoset_photo').css({
+        display : 'block',
+        margin : '0 0 0 0'
+      });
 
       $('iframe.photoset').contents().find('.photoset_row img').css('width', '300px');
 
