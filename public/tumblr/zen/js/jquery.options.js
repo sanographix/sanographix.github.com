@@ -27,12 +27,13 @@ $(document).ready(function(){
 
       $('iframe.photoset').contents().find('.photoset_row').css({
         width : 'auto',
-        height : 'auto',
-      })
-      .find('.photoset_row img').css('width', '300px');
+        width : 'auto',
+      });
+      $('iframe.photoset').contents().find('.photoset_row img').css('width', '300px');
 
     }
 
   });
+
 
 });
