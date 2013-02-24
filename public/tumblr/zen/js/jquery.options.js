@@ -31,6 +31,9 @@ $(document).ready(function(){
       });
       $('iframe.photoset').contents().find('.photoset_row img').css('width', '300px');
 
+      // Photoset のとき高さを自動調整する (jQuery iframe auto height plugin)
+      $('iframe.photoset').iframeAutoHeight();
+
     }
 
   });
