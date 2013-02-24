@@ -29,6 +29,9 @@ $(document).ready(function(){
         width : 'auto',
         height : 'auto',
       });
+
+      $('iframe.photoset').contents().find('.photoset_photo').css('display', 'block');
+
       $('iframe.photoset').contents().find('.photoset_row img').css('width', '300px');
 
       $('iframe.photoset').css('height', $('iframe.photoset').contents().find('body').height() + 'px');
