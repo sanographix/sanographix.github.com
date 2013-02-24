@@ -2,11 +2,11 @@
     .inline-block;
     padding: 4px 10px 4px;
     margin-bottom: 0;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 20px;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    font-size: 12px;
     text-decoration: none !important;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     border: 1px solid #cccccc;
@@ -21,12 +21,12 @@
     }
 }
 
-.btn-blue,
 .btn-primary {
     color: #fff !important;
-    background: @btn-primary;
+    .gradient(@link,@link,@hover);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     &:hover {
-        background: @btn-primary-hover;
+        .gradient(@link,@link,@hover);
     }
 }
 
@@ -36,8 +36,7 @@
 }
 
 .btn-large {
-    padding: 13px 19px;
+    padding: 11px 19px;
     font-size: 17px;
-    line-height: normal;
-    font-weight: bold;
+    .border-radius(5px);
 }
