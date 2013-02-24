@@ -23,7 +23,7 @@ $(document).ready(function(){
   $(window).load(function(){
 
     // スマホでphotosetの中をwidth100%にする
-    if ($(window).width() < 481) {
+    if ($(window).width() < 700) {
 
       $('iframe.photoset').contents().find('.photoset_row img').css('width', '100% !important');
 
