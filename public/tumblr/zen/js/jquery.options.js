@@ -25,11 +25,14 @@ $(document).ready(function(){
     // スマホでphotosetの中をwidth100%にする
     if ($(window).width() < 480) {
 
-      $('iframe.photoset').contents().find('.photoset_row img').css('width', '300px');
+      $('iframe.photoset').contents().find('.photoset_row').css({
+        width : 'auto',
+        height : 'auto',
+      })
+      .find('.photoset_row img').css('width', '300px');
 
     }
 
   });
-
 
 });
