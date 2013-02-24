@@ -35,7 +35,10 @@ $(document).ready(function(){
         margin : '0 0 0 0'
       });
 
-      $('iframe.photoset').contents().find('.photoset_row img').css('width', '300px');
+      $('iframe.photoset').contents().find('.photoset_row img').css({
+        width : '300px',
+        margin : '0 0 0 0'
+      });
 
       $('iframe.photoset').css('height', $('iframe.photoset').contents().find('body').height() + 'px');
 
