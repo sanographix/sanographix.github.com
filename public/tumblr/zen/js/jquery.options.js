@@ -27,7 +27,7 @@ $(document).ready(function(){
 
       $('iframe.photoset').contents().find('.photoset_row').css({
         width : 'auto',
-        width : 'auto',
+        height : 'auto',
       });
       $('iframe.photoset').contents().find('.photoset_row img').css('width', '300px');
 
