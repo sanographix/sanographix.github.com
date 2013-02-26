@@ -98,7 +98,7 @@ body {
 #header {
     margin: 25px auto;
     height: 44px;
-    
+
     .profile-image {
         width: 32px;
         height: 32px;
@@ -106,7 +106,7 @@ body {
         vertical-align: top;
         margin-right: 6px;
     }
-    
+
     h1 {
         float: left;
         margin: .2em 0;
@@ -120,15 +120,15 @@ body {
             }
         }
     }
-    
+
     .nav {
         float: right;
         margin: 20px 0 0 0;
-        
+
         li {
             float: left;
             font-size: 1.2em;
-            
+
             a {
                 color: @base;
                 text-decoration: none;
@@ -145,7 +145,7 @@ body {
 /* トップページ */
 
 /* FlexSlider Necessary Styles
-*********************************/ 
+*********************************/
 .flexslider {margin: 0; padding: 0;}
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {width: 100%; display: block;}
@@ -153,8 +153,8 @@ body {
 
 
 /* Clearfix for the .slides element */
-.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
-html[xmlns] .slides {display: block;} 
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
 * html .slides {height: 1%;}
 
 // スライドショー
@@ -165,12 +165,12 @@ html[xmlns] .slides {display: block;}
     padding-bottom: 40px;
     height: 400px;
     margin-bottom: 30px;
-    
+
     .slides {
         margin: 0;
         padding: 0;
         zoom: 1;
-    
+
         li {
             height: 400px;
         }
@@ -184,7 +184,7 @@ html[xmlns] .slides {display: block;}
         background-position: center 20%;
         background-repeat: no-repeat;
     }
-    
+
     .flex-viewport {
         width: 100%; //指定しないとIE8で表示されない
     }
@@ -198,7 +198,7 @@ html[xmlns] .slides {display: block;}
 .flexslider a:focus  {outline: none;}
 .slides,
 .flex-control-nav,
-.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
 
 /* Direction Nav */
 .flex-direction-nav a {
@@ -215,29 +215,46 @@ html[xmlns] .slides {display: block;}
     -webkit-transition: all .3s ease;
     filter:alpha(opacity=0);
 }
-.flex-direction-nav .flex-next {
+.flex-direction-nav .flex-next,
+.flex-direction-nav .next {
     background-position: 100% 0; right: 0px;
 }
-.flex-direction-nav .flex-prev {
+.flex-direction-nav .flex-prev,
+.flex-direction-nav .prev {
     left: 0px;
 }
 
-.flexslider:hover .flex-next {opacity: 0.8; right: 5px; filter:alpha(opacity=80);}
+.flexslider:hover {
+    .flex-next,
+    .next {
+        opacity: 0.8; right: 5px; filter:alpha(opacity=80);
+    }
 
-.flexslider:hover .flex-prev {opacity: 0.8; left: 5px; filter:alpha(opacity=80);}
+    .flex-prev,
+    .prev  {
+        opacity: 0.8; left: 5px; filter:alpha(opacity=80);
+    }
 
-.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
-    opacity: 1;
-    filter:alpha(opacity=100);
+    .flex-next:hover,
+    .next:hover,
+    .flex-prev:hover,
+    .prev:hover {
+        opacity: 1;
+        filter:alpha(opacity=100);
+    }
+
 }
+
 .flex-direction-nav .disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
 
 /* Control Nav */
 .flex-control-nav {width: 100%; position: absolute; bottom: 0px; text-align: center;}
 
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
 
-.flex-control-paging li a {
+.flex-control-paging li a,
+.flex-control-nav li a {
     width: 9px;
     height: 9px;
     display: block;
@@ -251,11 +268,15 @@ html[xmlns] .slides {display: block;}
     -o-border-radius: 20px;
     border-radius: 20px;
     box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+
+    &:hover {
+        background: #ccc;
+        background: rgba(0,0,0,0.2);
+    }
 }
 
-.flex-control-paging li a:hover { background: #ccc; background: rgba(0,0,0,0.2); }
-
-.flex-control-paging li a.flex-active {
+.flex-control-paging li a.flex-active,
+.flex-control-nav li a.flex-active {
     background: @link;
     cursor: default;
     box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
@@ -287,14 +308,14 @@ html[xmlns] .slides {display: block;}
         position: relative;
         margin-bottom: 20px;
     }
-    
+
     a {
         color: #fff;
         display: block;
         width: 100%;
         height: 100%;
     }
-    
+
     .thumb {
         width: 100%;
         height: 100%;
@@ -302,7 +323,7 @@ html[xmlns] .slides {display: block;}
         background-position: center 30%;
         background-repeat: no-repeat;
     }
-    
+
     .caption-wrapper {
         position: absolute;
         bottom: -50px;
@@ -319,18 +340,18 @@ html[xmlns] .slides {display: block;}
         -ms-box-sizing: border-box;
         box-sizing: border-box;
     }
-    
+
     .item:hover .caption-wrapper {
         .opacity(1);
         bottom: 0px;
     }
-    
+
     .caption {
         width: 70%;
         float: left;
         line-height: 24px;
         font-size: 1.2em;
-        
+
         h2 {
             font-size: 1em;
             height: 24px;
@@ -338,13 +359,13 @@ html[xmlns] .slides {display: block;}
             .ellipsis;
         }
     }
-    
+
     .detail {
         float: right;
         font-size: .85em;
         line-height: 24px;
         vertical-align: bottom;
-        
+
         i {
             vertical-align: middle;
         }
@@ -364,7 +385,7 @@ html[xmlns] .slides {display: block;}
     .meta {
         color: @light;
         margin-bottom: 20px;
-        
+
         a {
             color: @light;
             &:hover {
@@ -373,7 +394,7 @@ html[xmlns] .slides {display: block;}
             }
         }
     }
-    
+
     .tags ul {
         margin: 0;
         padding: 0;
@@ -381,28 +402,28 @@ html[xmlns] .slides {display: block;}
             list-style: none;
         }
     }
-    
+
     .socialbuttons {
         margin: 0;
         padding: 0;
-        
+
         li {
             list-style: none;
             border-bottom: 1px dashed @border;
             padding: 8px 0;
             height: 22px;
         }
-        
+
         li:last-child {
             border: none;
         }
     }
-    
+
     .notecount {
         font-size: 1.1em;
         color: @light;
         margin-bottom: 10px;
-        
+
         i {
             margin-right: 3px;
         }
@@ -411,20 +432,20 @@ html[xmlns] .slides {display: block;}
     .notecontainer {
         margin: 0 0 30px 0;
         color: #ccc;
-        
+
         a {
             color: #ccc;
         }
-        
+
         ol {
             margin: 0;
             padding: 0;
-            
+
             li {
                 list-style: none;
                 border-bottom: 1px dashed @border;
                 padding: 5px 0;
-                
+
                 .avatar {
                     max-height: 16px;
                     width: auto;
@@ -432,7 +453,7 @@ html[xmlns] .slides {display: block;}
                     margin-right: 3px;
                 }
             }
-            
+
         }
     }
 
@@ -457,7 +478,7 @@ html[xmlns] .slides {display: block;}
     text-align: center;
     margin-bottom: 50px;
     font-size: 1.8em;
-    
+
     a {
         color: #bbb;
         margin: 0 15px;
@@ -466,7 +487,7 @@ html[xmlns] .slides {display: block;}
             text-decoration: none;
         }
     }
-    
+
     i {
         vertical-align: middle;
         margin: 0 .2em;
@@ -480,7 +501,7 @@ html[xmlns] .slides {display: block;}
     color: @footer;
     padding-bottom: 30px;
     line-height: 1.8;
-    
+
     a {
         color: @footer;
         &:hover {
@@ -488,14 +509,14 @@ html[xmlns] .slides {display: block;}
             text-decoration: none;
         }
     }
-    
+
     h4 {
         margin: 30px 0 20px 0;
     }
-    
+
     .footer-content {
         font-size: .85em;
-        
+
         .profile-image {
             width: 64px;
             height: 64px;
@@ -503,19 +524,19 @@ html[xmlns] .slides {display: block;}
             float: left;
             margin: 0 10px 10px 0;
         }
-        
+
         ul {
             list-style: none;
             margin: 0;
             padding: 0;
         }
-        
+
         li {
             padding: 8px 0;
             line-height: 1.3;
         }
     }
-    
+
     .copyright {
         text-align: center;
         line-height: 1.4;
@@ -546,6 +567,6 @@ html[xmlns] .slides {display: block;}
   @media all and (-webkit-min-device-pixel-ratio : 1.5) {
     background-image: url(@at2x_path);
     background-size: @w @h;
-  }  
+  }
 }
 @import "_media-queries.less";
