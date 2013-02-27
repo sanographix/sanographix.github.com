@@ -9,6 +9,9 @@ $(document).ready(function(){
       $(".social-buttons").slideToggle();
     });
 
+    // シンタックスハイライト用のclassつける
+    $(".entry-content code").addClass("prettyprint");
+
   setTimeout(function(){
 
     $('.hatena-star-add-button').tipsy({
