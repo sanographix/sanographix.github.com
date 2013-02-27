@@ -10,7 +10,7 @@ $(document).ready(function(){
     });
 
     // シンタックスハイライト用のclassつける
-    $(".entry-content code").addClass("prettyprint");
+    $(".entry-content pre").addClass("prettyprint");
 
   setTimeout(function(){
 
