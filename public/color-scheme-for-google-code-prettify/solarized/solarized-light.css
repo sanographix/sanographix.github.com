@@ -1,0 +1,51 @@
+.prettyprint {
+  background-color: #fdf6e3;
+  padding: 10px;
+  border: 1px solid #E1E1E8;
+}
+.prettyprint .pln {
+  color: #bd3613;
+}
+.prettyprint .str {
+  color: #269186;
+}
+.prettyprint .kwd {
+  color: #859900;
+}
+.prettyprint .com {
+  color: #586175;
+  font-style: italic;
+}
+.prettyprint .typ {
+  color: #b58900;
+}
+.prettyprint .lit {
+  color: #2aa198;
+}
+.prettyprint .pun {
+  color: #839496;
+}
+.prettyprint .opn {
+  color: #839496;
+}
+.prettyprint .clo {
+  color: #839496;
+}
+.prettyprint .tag {
+  color: #268bd2;
+}
+.prettyprint .atn {
+  color: #586175;
+}
+.prettyprint .atv {
+  color: #2aa198;
+}
+.prettyprint .dec {
+  color: #268bd2;
+}
+.prettyprint .var {
+  color: #268bd2;
+}
+.prettyprint .fun {
+  color: #FF0000;
+}
