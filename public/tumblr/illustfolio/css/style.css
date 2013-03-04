@@ -7654,6 +7654,7 @@ html[xmlns] .slides {
 }
 .page-permalink .post.photo .span8 {
   margin-bottom: 10px;
+  text-align: center;
 }
 .page-permalink .meta {
   color: #999999;
