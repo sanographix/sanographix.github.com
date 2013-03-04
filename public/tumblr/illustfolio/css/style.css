@@ -7647,9 +7647,9 @@ html[xmlns] .slides {
 }
 /* パーマリンク */
 .page-permalink {
-  /* Photo */
-
   /* text */
+
+  /* Photo */
 
 }
 .page-permalink .post.photo .span8 {
@@ -7738,6 +7738,9 @@ html[xmlns] .slides {
 }
 .page-permalink .post.text .entry-title a {
   color: #4a4a4a;
+}
+.page-permalink .img-photoset {
+  margin-bottom: 10px;
 }
 /* ページャ */
 #pager {
