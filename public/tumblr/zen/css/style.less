@@ -253,7 +253,15 @@ h1,h2,h3,h4,h5,h6 {
     img {
         max-width: 100%;
         .box-shadow(0,1px,4px,rgba(0,0,0,.4));
+
+        &.noshadow {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            -o-box-shadow: none;
+            -ms-box-shadow: none;
+        }
     }
+
 
     h1,
     h2,
