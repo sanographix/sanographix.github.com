@@ -345,16 +345,33 @@ h1,h2,h3,h4,h5,h6 {
 
     }
 
+    pre,
+    code {
+        font-family: 'Source Code Pro', 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+    }
+
     pre {
         padding: 15px;
         border: 1px solid @border;
         background: @bg-light;
         .border-radius(3px);
-        font-family: 'Source Code Pro', 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
 
-        code {
+        &>code {
+            margin: 0;
+            padding: 0;
+            white-space: pre;
+            border: none;
+            background: transparent;
             font-family: 'Source Code Pro', 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
         }
+    }
+
+    code {
+        margin: 0 2px;
+        padding: 0px 5px;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
     }
 
     .amazlet-box {
