@@ -554,6 +554,25 @@ hr {
         font-size: 110%;
         background: @bg-light;
         margin-bottom: 1em;
+        position: relative;
+    }
+
+    .arrow_box:after {
+        top: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .arrow_box:after {
+        border-color: rgba(245, 245, 245, 0);
+        border-top-color: @bg-light;
+        border-width: 10px;
+        left: 50%;
+        margin-left: -10px;
     }
 
     .asker-group {
@@ -562,7 +581,7 @@ hr {
 
     .user-icon {
         .border-radius(2px);
-        .text-shadow(0,0,0,#fff);
+        .box-shadow(0,0,0,#fff);
     }
 }
 
