@@ -1,0 +1,240 @@
+/*--------------------------------------------------------------
+
+			Media Queries - Retina Display
+
+--------------------------------------------------------------*/
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+
+    body {
+        background-image: url(http://sanographix.github.com/public/tumblr/reblographix2/images/bg@2x.png);
+        background-size: 42px 42px;
+    }
+
+    #header {
+        background-image: url(http://sanographix.github.com/public/tumblr/reblographix2/images/header-bg@2x.png);
+        background-size: 42px 42px;
+    }
+
+    .entry-footer {
+        background-image: url(http://sanographix.github.com/public/tumblr/reblographix2/images/entry-footer-bg@2x.png);
+        background-size: 42px 42px;
+    }
+
+    #pageslide {
+        background-image: url(http://sanographix.github.com/public/tumblr/reblographix2/images/pageslide-bg@2x.png);
+        background-size: 256px 256px;
+    }
+
+    #searchBtn {
+        background-image: url(http://sanographix.github.com/public/tumblr/reblographix2/images/search@2x.png);
+        background-size: 20px 20px;
+    }
+
+    .tclose {
+        background: url(http://sanographix.github.com/public/tumblr/reblographix2/images/close@2x.png) no-repeat;
+        background-size: 30px 30px;
+    }
+
+}
+
+/*--------------------------------------------------------------
+
+      Media Queries - PC
+
+--------------------------------------------------------------*/
+// ものすごい幅ひろいとき
+@media (min-width: 2781px) {
+.page-index {
+    #container {
+        width: 2530px;
+    }
+}
+.page-permalink {
+    #container {
+        width: 700px;
+        border-left: 1px solid @border;
+        border-right: 1px solid @border;
+    }
+}
+}
+
+// max-widthと#containerはそれぞれ230px刻み
+@media (max-width: 2780px) {
+.page-index {
+    #container {
+        width: 2530px;
+    }
+}
+.page-permalink {
+    #container {
+        width: 700px;
+        border-left: 1px solid @border;
+        border-right: 1px solid @border;
+    }
+}
+}
+
+@media (max-width: 2550px) {
+.page-index {
+    #container {
+        width: 2300px;
+    }
+}
+}
+
+@media (max-width: 2320px) {
+.page-index {
+    #container {
+        width: 2070px;
+    }
+}
+}
+
+@media (max-width: 2090px) {
+.page-index {
+    #container {
+        width: 1840px;
+    }
+}
+}
+
+@media (max-width: 1860px) {
+.page-index {
+    #container {
+        width: 1610px;
+    }
+}
+}
+
+@media (max-width: 1630px) {
+.page-index {
+    #container {
+        width: 1380px;
+    }
+}
+}
+
+@media (max-width: 1400px) {
+.page-index {
+    #container {
+        width: 1150px;
+    }
+}
+}
+
+@media (max-width: 1170px) {
+.page-index {
+    #container {
+        width: 900px;
+    }
+    .post {
+        width: 170px;
+        height: 170px;
+    }
+
+    // video, audio
+    .icon-film,
+    .icon-music {
+        font-size: 80px;
+        line-height: 170px;
+    }
+
+}
+}
+
+@media (max-width: 920px) {
+.page-index {
+    #container {
+        width: 720px;
+    }
+}
+.page-permalink {
+    #container {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+    }
+}
+}
+
+
+/*--------------------------------------------------------------
+
+			Media Queries - Tablet & Smartphone
+
+--------------------------------------------------------------*/
+
+
+
+@media (max-width: 740px) {
+.page-index {
+    #container {
+        width: 510px;
+    }
+    .post {
+        width: 96px;
+        height: 96px;
+        margin: 2px;
+    }
+
+    // video, audio
+    .icon-film,
+    .icon-music {
+        font-size: 40px;
+        line-height: 96px;
+    }
+
+
+}
+}
+
+@media (max-width: 530px) {
+.page-index {
+    #container {
+        width: 408px;
+    }
+}
+}
+
+/*--------------------------------------------------------------
+
+			Media Queries - Smartphone
+
+--------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+
+.page-index {
+
+    #container {
+        width: 306px;
+    }
+
+    .post {
+        width: 96px;
+        height: 96px;
+        margin: 2px;
+    }
+
+}
+
+.tinner,
+.tcontent iframe {
+    width: 300px !important;
+}
+
+.page-permalink {
+
+    .post {
+
+        .entry-header,
+        .entry-content {
+            width: 280px;
+            font-size: 80%;
+        }
+
+    }
+}
+
+}

@@ -1,0 +1,136 @@
+#pageslide {
+    /* These styles MUST be included. Do not change. */
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+
+    /* Specify the width of your pageslide here */
+    width: 260px;
+
+    /* These styles are optional, and describe how the pageslide will look */
+    background: #333 url(http://sanographix.github.com/public/tumblr/reblographix2/images/pageslide-bg.png) repeat;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: -5px 0px 12px 0px #222 inset;
+    .text-shadow(0,1px,0,rgba(0,0,0,.5));
+
+    a {
+        color: #fff;
+    }
+
+    .portrait-image {
+        width: 24px;
+        height: 24px;
+        .border-radius(2px);
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+
+    .blog-description {
+        color: @light;
+        font-weight: normal;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    ul,li {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        a {
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid rgba(0,0,0,.4);
+            .box-shadow(0,1px,0,rgba(255,255,255,.1));
+
+            &:hover {
+                background: rgba(0,0,0,.25);
+            }
+
+        }
+    }
+
+    .blog-title li {
+            padding: 10px;
+            border-bottom: 1px solid rgba(0,0,0,.4);
+            .box-shadow(0,1px,0,rgba(255,255,255,.1));
+    }
+
+    h3 {
+        margin: 0;
+        background: rgba(0,0,0,.25);
+        color: #999;
+        border-top: 1px solid rgba(255,255,255,.15);
+        border-bottom: 1px solid rgba(0,0,0,.35);
+        padding: 4px 10px;
+        font-size: 11px;
+        box-shadow: -3px 2px 7px 1px rgba(0,0,0,.3);
+    }
+
+}
+
+// 検索フォーム
+#cse {
+    padding: 9px 10px 8px;
+    border-bottom: 1px solid rgba(0,0,0,.4);
+    .box-shadow(0,1px,0,rgba(255,255,255,.1));
+    background: rgba(0,0,0,.3);
+}
+
+#search {
+    .border-radius(30px);
+    border: 1px solid rgba(0,0,0,.5);
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background: rgba(255,255,255,.06);
+    .box-shadow(0,1px,1px,rgba(255,255,255,.15));
+}
+
+#stext {
+    padding: 5px;
+    color: #aaa;
+    background: 0;
+    border: 0;
+    outline: 0;
+    height: 14px;
+    width: 90%;
+    font-size: 12px;
+    margin-left: 25px;
+    width: 200px;
+}
+
+#searchBtn {
+    width: 20px;
+    height: 20px;
+    background: transparent url(http://sanographix.github.io/public/tumblr/reblographix2/images/search.png) no-repeat right center;
+    border: 0;
+    outline: 0;
+    text-indent: -9999px;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+}
+
+#footer {
+    margin: 10px;
+    font-weight: normal;
+    color: @light;
+    font-size: 11px;
+
+    .copyright {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    a {
+        color: #bbb;
+        font-weight: bold;
+    }
+}
