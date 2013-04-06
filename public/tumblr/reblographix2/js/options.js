@@ -65,7 +65,7 @@ $(function(){
       });
 
       $('iframe.photoset').contents().find('.photoset_row img').css({
-        width : '300px',
+        width : '280px',
         margin : '0 0 0 0'
       });
 
