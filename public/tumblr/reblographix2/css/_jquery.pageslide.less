@@ -1,10 +1,13 @@
 #pageslide {
     /* These styles MUST be included. Do not change. */
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     height: 100%;
     z-index: 999999;
+    overflow-y: auto;
+    overflow-x: none;
+    -webkit-overflow-scrolling: touch;
 
     /* Specify the width of your pageslide here */
     width: 260px;
