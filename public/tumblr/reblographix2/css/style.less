@@ -110,11 +110,12 @@ hr {
 // iOSっぽいスライドメニュー
 
 #sidr {
-    display: none;
+    display: none; // ボタン押されるまで隠す
 }
 
 .nav-open {
-    overflow: hidden;
+    overflow: hidden; // pageslide 出したときに横スクロールしない
+    position: fixed; // iOSでスクロールさせないように
 }
 
 
@@ -122,7 +123,6 @@ hr {
 
 .page-index {
     padding-bottom: 50px; // infinite scroll 用にちょっと遊びをもうける
-    overflow-x: hidden; // sidr 出したときに横スクロールしない
 
     #container {
         width: 968px;
