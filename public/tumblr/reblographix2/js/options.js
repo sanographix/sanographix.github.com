@@ -40,11 +40,6 @@ $(function(){
   // nanoscroller
   $(".nano").nanoScroller();
 
-  // ソーシャルボタン
-  $(".btn-share").click(function () {
-    $(".social-buttons").toggle();
-  });
-
   // fitvids
   $(".video-iframe").fitVids();
 
