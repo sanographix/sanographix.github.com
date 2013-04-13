@@ -22,8 +22,11 @@ body {
     background: @bg url(http://sanographix.github.com/public/tumblr/reblographix2/images/bg.png) repeat;
     color: @base;
     -webkit-font-smoothing: antialiased;
-    height: 100%; // パーマリンクで使ってる
     width: 100%; // これないとpageslide出したときにbodyの幅が可変する
+}
+
+body.page-permalink {
+    height: 100%; // パーマリンクで使ってる
 }
 
 body.theme-dark {
@@ -196,6 +199,15 @@ hr {
         color: rgba(0,0,0,.1);
     }
 
+}
+
+.page-index.theme-dark {
+    .post {
+        border: 1px solid rgba(0,0,0,.8);
+        &:hover {
+            border-color: rgba(0,0,0,.5);
+        }
+    }
 }
 
 // ページャ（隠す）
