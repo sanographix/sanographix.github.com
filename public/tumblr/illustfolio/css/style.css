@@ -7674,6 +7674,24 @@ html[xmlns] .slides {
 .page-permalink .tags ul li {
   list-style: none;
 }
+.page-permalink .like_and_reblog_buttons {
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  list-style: none;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.page-permalink .like_and_reblog_buttons li {
+  float: left;
+  margin: 0;
+  padding: 7px 15px;
+}
+.page-permalink .like_and_reblog_buttons li:first-child {
+  border-right: 1px solid #e8e8e8;
+}
 .page-permalink .socialbuttons {
   margin: 0;
   padding: 0;
