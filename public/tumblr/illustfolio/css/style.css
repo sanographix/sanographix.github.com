@@ -7684,6 +7684,9 @@ html[xmlns] .slides {
   margin: 0 0 10px 0;
   padding: 0;
 }
+.page-permalink .like_button {
+  height: 20px;
+}
 .page-permalink .like_and_reblog_buttons li {
   float: left;
   margin: 0;
