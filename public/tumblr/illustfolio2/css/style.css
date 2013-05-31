@@ -2397,6 +2397,7 @@ h6 a:hover {
   margin-bottom: 10px;
   display: block;
   *zoom: 1;
+  min-height: 30px;
 }
 .page-permalink #pager:after {
   display: block;
