@@ -3023,6 +3023,9 @@ h6 a:hover {
   width: 30%;
   padding-right: 10px;
 }
+.meta td {
+  word-wrap: break-word;
+}
 #related {
   display: block;
   *zoom: 1;
