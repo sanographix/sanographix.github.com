@@ -3024,7 +3024,7 @@ h6 a:hover {
   padding-right: 10px;
 }
 .meta td {
-  word-wrap: break-word;
+  word-break: break-all;
 }
 #related {
   display: block;
