@@ -485,6 +485,19 @@ hr {
 
 }
 
+// オプション：画像に影をつけない
+
+.noshadow .entry-content {
+    img,
+    video {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        -o-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
 // もっと読む
 
 .read_more {
@@ -631,19 +644,6 @@ hr {
     font-size: 90%;
     padding-bottom: 20px;
     border-bottom: 1px solid @border;
-}
-
-// オプション：画像に影をつけない
-
-.noshadow .entry-content {
-    img,
-    video {
-        -moz-box-shadow: none;
-        -webkit-box-shadow: none;
-        -o-box-shadow: none;
-        -ms-box-shadow: none;
-        box-shadow: none;
-    }
 }
 
 /* End Primary Styles */
