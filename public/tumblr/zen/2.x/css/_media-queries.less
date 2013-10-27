@@ -1,0 +1,155 @@
+/*--------------------------------------------------------------
+
+			Media Queries - Retina Display
+
+--------------------------------------------------------------*/
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),only screen and (min-device-pixel-ratio : 1.5) {
+
+}
+
+
+/*--------------------------------------------------------------
+
+      Media Queries - PC
+
+--------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+
+.nav {
+    height: auto !important;
+    overflow: visible !important;
+}
+
+}
+
+/*--------------------------------------------------------------
+
+			Media Queries - Tablet
+
+--------------------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1040px) {
+
+#container {
+    width: 724px;
+}
+
+.post .entry-content {
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        word-break: break-all;
+        overflow-x: hidden;
+    }
+}
+}
+
+
+/*--------------------------------------------------------------
+
+			Media Queries - Small Tablet & Smartphone
+
+--------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+
+#container {
+    width: 93.75%;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.mobile-nav-panel {
+    display: block;
+}
+
+.nav {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+
+    &.active {
+        height: auto;
+        overflow: visible;
+        margin-bottom: 10px;
+        border-bottom: 1px solid @border;
+        padding-bottom: 20px;
+    }
+
+    ul {
+        display: block;
+
+        li {
+            display: block;
+            width: 100%;
+
+            a {
+                display: block;
+                border: none;
+                margin-right: 0;
+                &:hover {
+                    border: none;
+                }
+            }
+        }
+
+    }
+
+}
+
+.post {
+    font-size: 95%;
+
+    .entry-title {
+      font-size: 22px;
+    }
+
+    .entry-content {
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow-x: hidden;
+        }
+
+        iframe {
+          width: 100% !important;
+        }
+
+    }
+
+}
+
+// ソーシャルボタン
+.social-buttons {
+
+    li {
+        float: none;
+        padding: 8px 0;
+        margin-right: 0px;
+    }
+}
+
+#footer {
+    text-align: center;
+    span {
+        display: block;
+        margin: 0;
+    }
+}
+
+
+}
+
+
+/*--------------------------------------------------------------
+
+			Media Queries - Smartphone
+
+--------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+
+}
