@@ -53,10 +53,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 hr {
-    margin: 20px 0;
+    width: 20%;
+    margin: 3em auto;
     border: 0;
-    border-top: 1px solid #eeeeee;
-    border-bottom: 1px solid #ffffff;
+    border-top: 3px solid #ddd;
 }
 
 //header
@@ -68,8 +68,8 @@ hr {
     .clearfix;
 
     .blog-title {
-        font-size: 26px;
-        line-height: 40px;
+        font-size: 163%;
+        line-height: 1.5em;
         margin: 0;
         font-weight: normal;
         padding: 0px 0 0 0;
@@ -77,7 +77,7 @@ hr {
     }
 
     .blog-description {
-        font-size: 11px;
+        font-size: 69%;
         margin: 10px 0 0 0;
         font-weight: normal;
         color: @light;
@@ -159,7 +159,7 @@ hr {
 // post
 
 .date {
-    font-size: 75%;
+    font-size: 69%;
     color: @light;
     letter-spacing: .2em;
     margin-bottom: 15px;
@@ -177,9 +177,9 @@ hr {
     border-bottom: 1px solid @border;
 
     .entry-title {
-        font-size: 26px;
+        font-size: 163%;
         font-weight: normal;
-        margin: 0 0 20px 0;
+        margin: 0 0 .6em 0;
     }
 
     .hatena-star-star-container {
@@ -192,7 +192,7 @@ hr {
 }
 
 .content_source {
-    font-size: 80%;
+    font-size: 75%;
     color: @light;
     margin-bottom: 20px;
 }
@@ -226,23 +226,23 @@ hr {
 // like, reblog button
 
 .like_and_reblog_buttons {
-    border: 1px solid #e8e8e8;
+    border: 1px solid @border;
     border-radius: 3px;
     list-style: none;
     .inline-block;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
     padding: 0;
 }
 
 .like_and_reblog_buttons li {
     float: left;
     margin: 0;
-    padding: 7px 15px;
+    padding: 9px 17px;
     height: 16px;
 }
 
 .like_and_reblog_buttons li:first-child {
-    border-right: 1px solid #e8e8e8;
+    border-right: 1px solid @border;
 }
 
 #disqus_thread {
@@ -290,7 +290,7 @@ hr {
 // entry-content textstyle
 
 .entry-content {
-    font-size: 95%;
+    font-size: 100%;
     line-height: 1.7;
     margin-bottom: 20px;
     font-family: 'Helvetica Neue','Arial','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
@@ -303,15 +303,6 @@ hr {
     img,
     video {
         max-width: 100%;
-        .box-shadow(0,1px,4px,rgba(0,0,0,.4));
-
-        &.noshadow {
-            -moz-box-shadow: none;
-            -webkit-box-shadow: none;
-            -o-box-shadow: none;
-            -ms-box-shadow: none;
-            box-shadow: none;
-        }
     }
 
     // Flickr で max-width 指定したときのアスペクト比をなおす
@@ -331,11 +322,11 @@ hr {
     }
 
     h1 {
-        font-size: 160%;
+        font-size: 170%;
     }
 
     h2 {
-        font-size: 150%;
+        font-size: 160%;
     }
 
     h3 {
@@ -371,6 +362,7 @@ hr {
         border-collapse: collapse;
         border-spacing: 0;
         border-bottom: 1em;
+        margin-bottom: 1em;
     }
 
     table th,
@@ -389,11 +381,10 @@ hr {
     }
 
     blockquote {
-        background: @bg-light;
-        margin: 0 0 10px;
-        padding: 20px;
-        background: @bg-light;
-        .border-radius(4px);
+        margin: 1.5em 3em;
+        padding: 5px 20px;
+        border-left: 2px solid #aaa;
+        color: #777;
 
         p:last-child {
             margin-bottom: 0;
@@ -408,12 +399,13 @@ hr {
 
     pre {
         padding: 15px;
-        border: 1px solid @border;
         background: @bg-light;
+        border: none;
         .border-radius(3px);
         white-space: normal;
         word-wrap: normal;
         overflow-x: auto;
+        font-size: 105%;
 
         &>code {
             margin: 0;
@@ -429,8 +421,8 @@ hr {
         font-size: 90%;
         margin: 0 2px;
         padding: 0px 5px;
-        border: 1px solid #eaeaea;
-        background-color: #f8f8f8;
+        border: 1px solid @border;
+        background-color: #f7f7f2;
         border-radius: 3px;
     }
 
@@ -439,9 +431,6 @@ hr {
         padding: 15px;
         margin-bottom: 1em !important;
         .border-radius(4px);
-        img {
-            .box-shadow(0,0,0,#fff);
-        }
     }
 
     .sticky-itslink,
@@ -450,13 +439,6 @@ hr {
         padding: 15px;
         margin-bottom: 1em;
         .border-radius(4px);
-        img {
-            .box-shadow(0,0,0,#fff);
-        }
-    }
-
-    .hBookmark-widget-counter img {
-        .box-shadow(0,0,0,#fff);
     }
 
     // twilog
@@ -491,18 +473,6 @@ hr {
 
 }
 
-// オプション：画像に影をつけない
-
-.noshadow .entry-content {
-    img,
-    video {
-        -moz-box-shadow: none;
-        -webkit-box-shadow: none;
-        -o-box-shadow: none;
-        -ms-box-shadow: none;
-        box-shadow: none;
-    }
-}
 
 // もっと読む
 
@@ -625,7 +595,6 @@ hr {
 
     .user-icon {
         .border-radius(2px);
-        .box-shadow(0,0,0,#fff);
     }
 }
 
@@ -634,7 +603,7 @@ hr {
 #footer {
     padding: 30px 0;
     text-align: right;
-    font-size: 70%;
+    font-size: 75%;
     color: @light;
 
     .copyright {
@@ -647,7 +616,7 @@ hr {
 .tagged {
     font-weight: normal;
     margin-top: 0;
-    font-size: 90%;
+    font-size: 88%;
     padding-bottom: 20px;
     border-bottom: 1px solid @border;
 }

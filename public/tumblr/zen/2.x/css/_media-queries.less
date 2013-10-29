@@ -36,14 +36,23 @@
     width: 724px;
 }
 
-.post .entry-content {
-    pre {
-        white-space: pre-wrap;
-        word-wrap: break-word;
-        word-break: break-all;
-        overflow-x: hidden;
+.post {
+    font-size: 94%;
+
+    .entry-title {
+      font-size: 163%;
+    }
+
+    .entry-content {
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow-x: hidden;
+        }
     }
 }
+
 }
 
 
@@ -100,10 +109,10 @@
 }
 
 .post {
-    font-size: 95%;
+    font-size: 94%;
 
     .entry-title {
-      font-size: 22px;
+      font-size: 163%;
     }
 
     .entry-content {
@@ -112,6 +121,11 @@
             word-wrap: break-word;
             word-break: break-all;
             overflow-x: hidden;
+            font-size: 100%;
+        }
+
+        blockquote {
+            margin: 1em 0;
         }
 
         iframe {
@@ -151,5 +165,6 @@
 --------------------------------------------------------------*/
 
 @media (max-width: 480px) {
+
 
 }

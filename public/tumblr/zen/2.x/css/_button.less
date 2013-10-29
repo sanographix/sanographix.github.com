@@ -1,46 +1,40 @@
 .btn {
     .inline-block;
-    padding: 4px 10px 4px;
+    padding: 8px 15px;
     margin-bottom: 0;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 90%;
+    line-height: 1.3em;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
     text-decoration: none !important;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    color: @link;
-    .gradient(#fff,#fff,#f5f5f5);
-    .border-radius(2px);
+    border: 1px solid @border;
+    color: @base;
+    background-color: #fff;
+    .border-radius(5px);
     &:hover {
-        color: @hover;
-        .gradient(#fff,#fff,#f0f0f0);
+        background-color: @bg-light;
+        color: @base;
         text-decoration: none !important;
     }
 }
 
 .btn-primary {
     color: #fff !important;
-    .gradient(@btn-gradient-top,@btn-gradient-top,@btn-gradient-bottom);
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: @link;
+    border-color: transparent;
     &:hover {
-        .gradient(@btn-hover-gradient-bottom,@btn-gradient-top,@btn-hover-gradient-bottom);
+        background-color: @hover;
     }
 }
 
 .btn-small {
     padding: 2px 10px !important;
-    font-size: 11px !important;
+    font-size: 80% !important;
 }
 
 .btn-large {
-    padding: 11px 19px;
-    font-size: 17px;
-    .border-radius(5px);
+    padding: 12px 25px;
+    font-size: 113%;
+    .border-radius(7px);
 }
