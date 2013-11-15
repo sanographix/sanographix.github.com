@@ -1,0 +1,153 @@
+/*
+    Main CSS
+*/
+
+@import "_normalize.less";
+@import "_mixin.less";
+@import "_variable.less";
+
+/* Common Styles */
+
+// Common
+
+html,
+body {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    background: @bg;
+    color: @base;
+    font-size: 11px;
+}
+
+a {
+    color: @link;
+
+    &:hover {
+        color: @hover;
+    }
+
+}
+
+::selection,
+::-moz-selection {
+    background: @selection;
+    color:#fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    a,a:hover {
+        color: @base;
+        text-decoration: none;
+    }
+}
+
+// ボタン
+
+.btn {
+    .inline-block;
+    text-align: center;
+    padding: 5px 15px 3px;
+    cursor: pointer;
+    line-height: 1.5;
+    .border-radius(5px);
+    overflow: hidden;
+    color: @base;
+    text-decoration: none;
+    border: 2px solid @base;
+    &:hover {
+        border-color: #ff00aa;
+        color: #ff00aa;
+    }
+    &.disabled {
+        border: 2px dashed @base;
+        .opacity(.3);
+        cursor: default;
+        &:hover {
+            color: @base;
+        }
+    }
+}
+
+.btn-large {
+    padding: 8px 25px;
+    font-size: 150%;
+    box-sizing: border-box;
+}
+
+/* End Common Styles */
+
+.header {
+    border-bottom: 1px solid @border;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    .clearfix;
+    .pull-left {
+        float: left;
+        font-size: 150%;
+        font-weight: bold;
+    }
+    .pull-right {
+        float: right;
+        text-align: right;
+    }
+
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: @base;
+    }
+}
+
+.content {
+    margin: 30px auto;
+    width: 600px;
+    .img {
+        margin-bottom: 40px;
+    }
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 300%;
+        letter-spacing: -.05em;
+        margin: 0 0 10px 0;
+    }
+}
+
+.table {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+    th,
+    td {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 5px;
+    }
+    th {
+        width: 100px;
+    }
+}
+
+.bigger {
+    font-size: 150%;
+}
+
+.order {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.social-buttons {
+    list-style: none;
+    padding: 0;
+    li {
+        display: inline-block;
+    }
+}
+
+.footer {
+    color: @light;
+    line-height: 1.5;
+}
+
+@import "_media-queries.less";
