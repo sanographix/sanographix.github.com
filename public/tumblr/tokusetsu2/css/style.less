@@ -1,0 +1,704 @@
+/*
+    Main CSS
+*/
+
+@import "_normalize.less";
+@import "_mixin.less";
+@import "_variable.less";
+
+/* Common Styles */
+
+// Common
+
+html,
+body {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    background: @bg;
+    color: @base;
+    text-align: center;
+}
+
+a {
+    color: @red;
+    &:hover {
+        color: @red-hover;
+    }
+}
+
+::selection,
+::-moz-selection {
+    background: @selection;
+    color:#fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.3;
+    a,a:hover {
+        color: @base;
+        text-decoration: none;
+    }
+}
+
+// ボタン
+
+.btn {
+    .inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 120%;
+    font-weight: bold;
+    .border-radius(7px);
+    overflow: hidden;
+    background-color: @base;
+    text-decoration: none;
+    padding: 1em 4em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #fff;
+    &:hover {
+        text-decoration: none;
+        background-color: #2f333f;
+    }
+}
+
+.btn-large {
+    box-sizing: border-box;
+}
+
+// グローバルヘッダ
+
+#globalheader {
+    padding: 20px 0;
+    .box-shadow(0,0,10px,rgba(0,0,0,.3));
+    position: relative;
+    z-index: 10;
+    h1 {
+        font-size: 320%;
+        margin: 0;
+        font-weight: 200;
+        a {
+            color: @red;
+        }
+    }
+}
+
+.header-nav {
+    font-size: 120%;
+    ul {
+        margin: 10px 0 0;
+        padding: 0;
+    }
+    & > ul > li {
+        display: inline-block;
+        margin-left: 1em;
+        &:first-child {
+            margin-left: 0;
+        }
+
+        a {
+            padding: 6px 20px;
+            color: @base;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 200;
+            font-size: 90%;
+            &:hover {
+                color: @light;
+            }
+        }
+    }
+}
+
+// header
+
+#header-image {
+    height: 600px;
+    position: relative;
+    background: @bg-light;
+    .header-image-content {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        height: 600px;
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+    .header-image-mask {
+        background: url('../images/header-image-mask.png') repeat-y center center;
+        height: 600px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+// section
+
+section.section {
+    padding: 3em 0;
+    &:nth-child(3n+1) {
+        background-color: @red; // 1番目
+    }
+    &:nth-child(3n+2) {
+        background-color: #fff;　// 2番目
+    }
+    &:nth-child(3n+3) {
+        background-color: @base; // 3番目
+    }
+}
+
+.section:nth-child(3n+1),
+.section:nth-child(3n+3) {
+    color: #fff;
+    color: rgba(255,255,255,.8);
+    h1,h2,h3,h4,h5,a {
+        color: #fff;
+    }
+}
+
+.section:nth-child(3n+1) {
+    // メインカラーのとき
+    .list .number,
+    .list .role {
+        color: @base;
+    }
+    .list .meta {
+        color: rgba(255,255,255,.8);
+    }
+    .title {
+        color: #fff;
+    }
+    &#staff .website a {
+        border-color: #fff;
+        &:hover {
+            background: #fff;
+            color: @red;
+        }
+    }
+}
+
+.section:nth-child(3n+2) {
+    // 白背景のとき
+    .table th,
+    .table td {
+        border-bottom: 1px solid rgba(0,0,0,.15);
+    }
+}
+
+.section:nth-child(3n+3) {
+    // 黒背景のとき
+    .title {
+        color: #fff;
+    }
+    .list .meta {
+        color: rgba(255,255,255,.8);
+    }
+    &#staff .website a {
+        border-color: #fff;
+        &:hover {
+            color: #fff !important;
+            border-color: transparent;
+        }
+    }
+
+    .btn {
+        background-color: @red;
+        &:hover {
+            background-color: @red-hover;
+        }
+    }
+}
+
+.section {
+    h3 {
+        margin-top: 0;
+        text-transform: uppercase;
+        letter-spacing: .3em;
+        font-size: 100%;
+        margin-bottom: 1em;
+    }
+}
+
+.content {
+    width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+    .clearfix;
+}
+
+// spec
+
+#spec {
+    a:hover {
+        color: rgba(255,255,255,.7);
+    }
+    h2 {
+        font-size: 280%;
+        margin: 0 0 .3em 0;
+    }
+    .introduction {
+        margin: 0 0 2em 0;
+    }
+    .jacket-image {
+        width: 300px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        float: left;
+        img {
+            max-width: 100%;
+            .box-shadow(0,2px,5px,rgba(0,0,0,.3));
+        }
+    }
+    .jacket-noimage {
+        height: 298px;
+        width: 298px;
+        line-height: 298px;
+        letter-spacing: .3em;
+        border: 1px solid #fff;
+        border: 1px solid rgba(255,255,255,.5);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .table {
+        width: 560px;
+    }
+}
+
+.table {
+    th,td {
+        padding: 15px 8px;
+        text-align: left;
+        border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+    th {
+        font-size: 80%;
+    }
+    ul {
+        padding-left: 1em;
+    }
+
+}
+
+.available {
+    clear: both;
+    margin-top: 2em;
+}
+
+.available-dropdown {
+    display: none;
+    ul {
+        padding: 0;
+        list-style: none;
+        background: #fff;
+        width: 280px;
+        margin: 0 auto;
+        border: 1px solid rgba(0,0,0,.15);
+        position: relative;
+
+        // 吹き出し
+        &:after {
+            content: '';
+            position: absolute;
+            border-bottom: 10px solid #fff;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            top: -9px;
+            right: 129px;
+        }
+
+    }
+    li {
+        display: block;
+        border-bottom: 1px solid @border;
+        a {
+            display: block;
+            padding: 8px 0;
+            color: @red !important;
+            text-decoration: none;
+            &:hover {
+                background: @bg-light;
+            }
+        }
+    }
+}
+
+.social-buttons {
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 0;
+    li {
+        display: inline-block;
+        padding: 10px 5px 10px;
+        height: 20px;
+    }
+}
+
+// tracklist
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin-bottom: 2em;
+    }
+
+    & > li > span {
+        display: block;
+    }
+
+    .number,
+    .role {
+        color: @red;
+        font-style: italic;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+
+    .number {
+        font-size: 130%;
+    }
+
+    .title {
+        font-size: 150%;
+        font-weight: bold;
+        line-height: 1.3;
+    }
+
+    .meta {
+        color: @light;
+        font-size: 90%;
+    }
+}
+
+// staff
+
+#staff {
+    .list {
+        margin-left: -20px;
+        .clearfix;
+    }
+    li {
+        width: 280px;
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        height: 100px;
+    }
+
+    .website a {
+        font-size: 70%;
+        padding: 2px 10px;
+        border: 1px solid @red;
+        text-decoration: none;
+        .border-radius(3px);
+        &:hover {
+            color: #fff;
+            background-color: @red;
+        }
+    }
+}
+
+// banner
+
+.banner-box {
+    margin: 0 5px;
+    img {
+        vertical-align: top;
+    }
+}
+
+// footer
+
+#footer {
+    padding: 3em 0;
+    background: @bg-light;
+    font-size: 90%;
+    color: @light;
+}
+
+
+/* End Common Styles */
+
+/* line 3, clingify.scss */
+.js-clingify-ztransform, .js-clingify-wrapper {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* Baseline selectors */
+/* line 10, clingify.scss */
+.js-clingify-wrapper {
+  width: 100%;
+}
+
+/* line 14, clingify.scss */
+.js-clingify-locked {
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  background: #fff;
+  padding: 10px 0 20px 0;
+  .box-shadow(0,0,10px,rgba(0,0,0,.3));
+}
+
+
+// パーマリンクページ
+
+.page-header h2 {
+    font-size: 280%;
+    margin: 0 0 .3em;
+}
+
+.entry-content {
+    text-align: left;
+
+    h3 {
+        font-size: 1.17em;
+        margin: 1em 0;
+        letter-spacing: 0;
+    }
+}
+
+// tumblr control 消してる
+#tumblr_controls,
+#tumblr_teaser_follow {
+    display: none !important;
+}
+
+.tumblr_mobile_banner {
+    position: static !important;
+}
+
+
+// カラバリ
+
+// 緑
+.green {
+    a {
+        color: @green;
+        &:hover {
+            color: @green-hover;
+        }
+    }
+
+    #globalheader {
+        h1 {
+            a {
+                color: @green;
+            }
+        }
+    }
+
+    section.section {
+        &:nth-child(3n+1) {
+            background-color: @green; // 1番目
+        }
+    }
+
+    .section:nth-child(3n+1),
+    .section:nth-child(3n+3) {
+        &#staff .website a {
+            &:hover {
+                color: @green;
+            }
+        }
+    }
+
+    .section:nth-child(3n+3) {
+        .btn {
+            background-color: @green;
+            &:hover {
+                background-color: @green-hover;
+            }
+        }
+    }
+
+    .available-dropdown {
+        li {
+            a {
+                color: @green !important;
+            }
+        }
+    }
+
+    .list {
+        .number,
+        .role {
+            color: @green;
+        }
+    }
+
+    #staff {
+        .website a {
+            border: 1px solid @green;
+            &:hover {
+                color: #fff;
+                background-color: @green;
+            }
+        }
+    }
+
+}
+
+// 青
+.blue {
+    a {
+        color: @blue;
+        &:hover {
+            color: @blue-hover;
+        }
+    }
+
+    #globalheader {
+        h1 {
+            a {
+                color: @blue;
+            }
+        }
+    }
+
+    section.section {
+        &:nth-child(3n+1) {
+            background-color: @blue; // 1番目
+        }
+    }
+
+    .section:nth-child(3n+1),
+    .section:nth-child(3n+3) {
+        &#staff .website a {
+            &:hover {
+                color: @blue;
+            }
+        }
+    }
+
+    .section:nth-child(3n+3) {
+        .btn {
+            background-color: @blue;
+            &:hover {
+                background-color: @blue-hover;
+            }
+        }
+    }
+
+    .available-dropdown {
+        li {
+            a {
+                color: @blue !important;
+            }
+        }
+    }
+
+    .list {
+        .number,
+        .role {
+            color: @blue;
+        }
+    }
+
+    #staff {
+        .website a {
+            border: 1px solid @blue;
+            &:hover {
+                color: #fff;
+                background-color: @blue;
+            }
+        }
+    }
+
+}
+
+// グレー
+.gray {
+    a {
+        color: @gray;
+        &:hover {
+            color: @gray-hover;
+        }
+    }
+
+    #globalheader {
+        h1 {
+            a {
+                color: @blue;
+            }
+        }
+    }
+
+    section.section {
+        &:nth-child(3n+1) {
+            background-color: @gray; // 1番目
+        }
+    }
+
+    .section:nth-child(3n+1),
+    .section:nth-child(3n+3) {
+        &#staff .website a {
+            &:hover {
+                color: @gray;
+            }
+        }
+    }
+
+    .section:nth-child(3n+3) {
+        .btn {
+            background-color: @gray;
+            &:hover {
+                background-color: @gray-hover;
+            }
+        }
+    }
+
+    .available-dropdown {
+        li {
+            a {
+                color: @gray !important;
+            }
+        }
+    }
+
+    .list {
+        .number,
+        .role {
+            color: @gray;
+        }
+    }
+
+    #staff {
+        .website a {
+            border: 1px solid @gray;
+            &:hover {
+                color: #fff;
+                background-color: @gray;
+            }
+        }
+    }
+
+}
+
+// デモサイト用
+
+.alert {
+    margin-top: 30px;
+    padding: 20px;
+    border: 4px dashed @base;
+    h3 {
+        font-size: 120%;
+        letter-spacing: .2em;
+    }
+    .btn {
+        padding: .5em 1em;
+        letter-spacing: 0;
+        font-size: 100%;
+    }
+}
+
+@import "_media-queries.less";

@@ -1,0 +1,176 @@
+/*--------------------------------------------------------------
+
+      Media Queries - Retina Display
+
+--------------------------------------------------------------*/
+
+// Retina のデバイス全部に出す
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(            min-resolution: 2dppx) {
+
+}
+
+// Retina かつ iPad 以上のときに出す
+@media
+(-webkit-min-device-pixel-ratio: 2) and (min-device-width: 768px),
+(            min-resolution: 2dppx) and (min-device-width: 768px) {
+
+}
+
+// Retina かつ PC のときだけに出す
+@media
+(-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px),
+(            min-resolution: 2dppx) and (min-device-width: 1025px) {
+
+}
+
+
+/*--------------------------------------------------------------
+
+      Media Queries - Tablet
+
+--------------------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1040px) {
+
+.content {
+    width: 724px;
+}
+
+#globalheader h1 {
+    font-size: 280%;
+}
+
+#header-image {
+    height: 440px;
+    .header-image-content,
+    .header-image-mask {
+        height: 440px;
+    }
+}
+
+#spec .table {
+    width: 400px;
+}
+
+#staff li {
+    width: 228px;
+}
+
+}
+
+
+/*--------------------------------------------------------------
+
+      Media Queries - Small Tablet & Smartphone
+
+--------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+.content {
+    width: 93.75%;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+#globalheader h1 {
+    font-size: 200%;
+}
+
+#globalheader {
+    padding: 10px 0;
+}
+
+.header-nav > ul > li {
+    margin-left: 0;
+    a {
+        padding: 6px 10px;
+        font-weight: normal;
+        font-size: 85%;
+    }
+}
+
+.js-clingify-locked {
+    position: static;
+    padding: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#header-image {
+    height: 340px;
+    .header-image-content,
+    .header-image-mask {
+        height: 340px;
+    }
+}
+
+.list {
+    .title {
+        font-size: 130%;
+    }
+}
+
+#spec {
+    h2 {
+        font-size: 180%;
+    }
+    .jacket-image {
+        width: 100%;
+        margin-right: 0;
+    }
+    .table {
+        width: 100%;
+    }
+}
+
+#staff {
+    .list {
+        margin-left: 0;
+    }
+    li {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
+#banner .banner-box {
+    margin: 5px 0;
+    display: block;
+    img {
+        max-width: 100%;
+    }
+}
+
+}
+
+/*--------------------------------------------------------------
+
+      Media Queries - Smartphone
+
+--------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+
+#header-image {
+    height: 180px;
+    .header-image-content,
+    .header-image-mask {
+        height: 180px;
+    }
+}
+
+.btn {
+    width: 100%;
+    padding: 1em .5em;
+}
+
+.alert .btn {
+    width: auto;
+}
+
+}
