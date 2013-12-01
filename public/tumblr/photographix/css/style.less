@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+/*
+    Main CSS
+*/
+
+@import "_normalize.less";
+@import "_mixin.less";
+@import "_variable.less";
+@import "_button.less";
+@import "_tipsy.less";
+@import "_prettify.less";
+
+/* Primary Styles */
+
+// Common
+
+html,
+body {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    background: @bg;
+    color: @base;
+    font-size: 90%;
+}
+
+a {
+    color: @link;
+    text-decoration: none;
+    &:hover {
+        color: @hover;
+    }
+
+}
+
+::selection {
+    background: @selection;
+    color:#fff;
+}
+
+::-moz-selection {
+    background: @selection;
+    color:#fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    a,a:hover {
+        color: @base;
+        text-decoration: none;
+    }
+}
+
+.btn {
+    font-weight: normal;
+}
+
+hr {
+    width: 20%;
+    margin: 3em auto;
+    border: 0;
+    border-top: 3px solid #ddd;
+}
+
+// container
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+//header
+
+#header {
+    text-align: center;
+    margin: 60px 0 30px 0;
+}
+
+.blog-title {
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-size: 240%;
+}
+
+.blog-description {
+    font-size: 90%;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .6em;
+    color: @light;
+}
+
+.nav {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid @border;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: .3em;
+        margin-right: 1em;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+// post
+
+.post {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid @border;
+}
+
+.date {
+    letter-spacing: .3em;
+    margin-bottom: 1.5em;
+}
+
+.entry-title {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 150%;
+    margin: 0 0 2em 0;
+}
+
+.entry-content {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+
+    img {
+        max-width: 100%;
+    }
+
+    p {
+        margin: 0 0 3em 0;
+    }
+
+    // Flickr で max-width 指定したときのアスペクト比をなおす
+     a[title*="Flickr"] img {
+        height: auto !important;
+     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 2em 0;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 150%;
+    }
+
+    h2 {
+        font-size: 140%;
+    }
+
+    h3 {
+        font-size: 130%;
+    }
+
+    h4 {
+        font-size: 120%;
+    }
+
+    h5 {
+        font-size: 110%;
+    }
+
+    h6 {
+        font-size: 100%;
+    }
+
+    ul,
+    ol,
+    dd {
+        margin: 0 0 1em 1.5em;
+        padding: 0;
+
+        li {
+            ul,ol {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        border-bottom: 1em;
+        margin-bottom: 1em;
+    }
+
+    table th,
+    table td {
+        border: 1px solid #ddd;
+        padding: 5px 10px;
+    }
+
+    table th {
+        background: #fafafa;
+    }
+
+
+    .hatena-asin-detail li {
+        line-height: 1.4;
+    }
+
+    blockquote {
+        margin: 1.5em 3em;
+        padding: 5px 20px;
+        border-left: 2px solid #aaa;
+        color: #777;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+.entry-footer {
+    color: @light;
+    a {
+        color: @light;
+    }
+    .meta-elements,
+    .hatena-star-star-container {
+        display: block;
+        padding: 5px 0;
+    }
+}
+
+// like, reblog button
+
+.like_and_reblog_buttons {
+    border: 1px solid @border;
+    border-radius: 3px;
+    list-style: none;
+    .inline-block;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.like_and_reblog_buttons li {
+    float: left;
+    margin: 0;
+    padding: 9px 17px;
+    height: 16px;
+}
+
+.like_and_reblog_buttons li:first-child {
+    border-right: 1px solid @border;
+}
+
+.notecontainer {
+    margin: 20px 0;
+    ol {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            border-bottom: 1px dashed @border;
+            padding: 5px 0;
+
+            .avatar {
+                max-height: 16px;
+                width: auto;
+            }
+        }
+
+        .avatar {
+            .border-radius(3px);
+        }
+
+    }
+}
+
+// ソーシャルボタン
+.social-buttons {
+    .clearfix;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        margin-right: 15px;
+        list-style: none;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+#pager {
+    padding-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid @border;
+
+    a {
+        color: @light;
+        text-decoration: none;
+        letter-spacing: .2em;
+        margin: 0 20px;
+
+        &:hover {
+            color: @base;
+        }
+    }
+
+}
+
+// Footer
+
+#footer {
+    padding: 30px 0;
+    text-align: right;
+    color: @light;
+
+    .copyright {
+        margin-right: 1em;
+    }
+}
+
+// タグページ
+
+.tagged {
+    font-weight: normal;
+    margin-top: 0;
+    font-size: 88%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid @border;
+}
+
+// gear
+
+.gears {
+    margin: 40px 0 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid @border;
+    h2 {
+        margin: 0 0 0 0;
+        font-size: 110%;
+    }
+}
+
+.gear-list {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style: none;
+    width: 1020px;
+    margin-right: -20px;
+    overflow: hidden;
+    li {
+        float: left;
+        margin-right: 20px;
+        width: 320px;
+        text-align: center;
+    }
+    img {
+        max-width: 180px;
+    }
+    .gear-description {
+        text-align: left;
+        a {
+            font-weight: bold;
+        }
+        p {
+            color: @light;
+            margin: .5em 0;
+            font-size: 90%;
+        }
+    }
+}
+
+/* End Primary Styles */
+
+@import "_media-queries.less";
