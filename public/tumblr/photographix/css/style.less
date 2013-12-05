@@ -20,16 +20,15 @@ body {
     font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     background: @bg;
     color: @base;
-    font-size: 90%;
+    font-size: 95%;
 }
 
 a {
-    color: @link;
+    color: @base;
     text-decoration: none;
     &:hover {
-        color: @hover;
+        color: @light;
     }
-
 }
 
 ::selection {
@@ -79,7 +78,7 @@ hr {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: .3em;
-    font-size: 240%;
+    font-size: 220%;
 }
 
 .blog-description {
@@ -104,8 +103,8 @@ hr {
     li {
         display: inline-block;
         text-transform: uppercase;
-        letter-spacing: .3em;
-        margin-right: 1em;
+        letter-spacing: .15em;
+        padding: 0 1em;
         &:last-child {
             margin-right: 0;
         }
@@ -128,19 +127,31 @@ hr {
 
 .entry-title {
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-    font-size: 150%;
-    margin: 0 0 2em 0;
+    font-size: 140%;
+    margin: 0 0 1.5em 0;
 }
 
 .entry-content {
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    text-align: left;
 
     img {
         max-width: 100%;
     }
 
+    a {
+        color: @link;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     p {
-        margin: 0 0 3em 0;
+        margin: 0 0 2.5em 0;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
     }
 
     // Flickr で max-width 指定したときのアスペクト比をなおす
@@ -154,8 +165,8 @@ hr {
     h4,
     h5,
     h6 {
-        margin: 2em 0;
-        line-height: 1.5;
+        margin: 0 0 1em 0;
+        line-height: 1.3;
     }
 
     h1 {
@@ -237,8 +248,11 @@ hr {
     }
     .meta-elements,
     .hatena-star-star-container {
-        display: block;
-        padding: 5px 0;
+        padding: 0 .5em;
+    }
+
+    .hastags a {
+        margin-right: .5em;
     }
 }
 
@@ -309,17 +323,9 @@ hr {
 #pager {
     padding-bottom: 50px;
     text-align: center;
-    border-bottom: 1px solid @border;
 
     a {
-        color: @light;
-        text-decoration: none;
-        letter-spacing: .2em;
         margin: 0 20px;
-
-        &:hover {
-            color: @base;
-        }
     }
 
 }
