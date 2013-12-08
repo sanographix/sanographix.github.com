@@ -10,7 +10,7 @@ $(document).ready(function(){
     });
 
     // シンタックスハイライト用のclassつける
-    $(".entry-content pre").addClass("prettyprint");
+    $(".entry-content pre:not(.line-pre)").addClass("prettyprint"); // gistは除外
 
   setTimeout(function(){
 
