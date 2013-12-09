@@ -1,14 +1,5 @@
 $(function () {
 
-  // 最近の記事出す
-  $(function(){
-    $("#related").jq_tumblrPostList({
-      api_key:"{text:Tumblr API Key}",
-      domain: location.host, //取得先となるTumblrサイトのドメイン
-      limit:3 //記事の数
-    });
-  });
-
   // タグリスト記事出す
   (function() {
     var posts = new TumblrPosts({
