@@ -249,7 +249,7 @@ hr {
     margin-top: 30px;
 }
 
-.notecontainer {
+.container {
     margin: 20px 0;
 
     ol {
@@ -264,6 +264,8 @@ hr {
             .avatar {
                 max-height: 16px;
                 width: auto;
+                vertical-align: middle;
+                margin-right: .5em;
             }
         }
 
@@ -550,6 +552,8 @@ hr {
     }
 }
 
+// 旧ページャ
+
 #pager {
     padding-bottom: 50px;
     text-align: center;
@@ -566,7 +570,43 @@ hr {
             color: @base;
         }
     }
+}
 
+// 新ページャ
+
+.pagenation {
+    padding-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid @border;
+    font-size: 80%;
+    text-transform: uppercase;
+
+    span,
+    a {
+        display: inline-block;
+        min-width: 1.2em;
+        padding: 6px 8px;
+        margin: 1px;
+        .border-radius(3px);
+    }
+
+    a {
+        color: @light;
+        &:hover {
+            background-color: @bg-light;
+        }
+    }
+
+    .current-page {
+        background: #ccc;
+        color: #fff;
+    }
+
+    &.pagenation-permalink {
+        a {
+            padding: 8px 15px;
+        }
+    }
 }
 
 // Answer
