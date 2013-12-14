@@ -395,6 +395,7 @@ h1,h2,h3,h4,h5,h6 {
 
     .asker-group {
         margin-left: 5%;
+        margin-bottom: 1em;
     }
 
     .user-icon {
@@ -534,23 +535,39 @@ h1,h2,h3,h4,h5,h6 {
 
 // pager
 
-#pager {
+.pagenation {
     padding-bottom: 50px;
     text-align: center;
     border-bottom: 1px solid @border;
     font-size: 80%;
+    text-transform: uppercase;
+
+    span,
+    a {
+        display: inline-block;
+        min-width: 1.2em;
+        padding: 6px 8px;
+        margin: 1px;
+        .border-radius(3px);
+    }
 
     a {
         color: @light;
-        text-decoration: none;
-        letter-spacing: .5em;
-        padding: 20px;
-
         &:hover {
-            color: @hover;
+            background-color: @bg-light;
         }
     }
 
+    .current-page {
+        background: #ccc;
+        color: #fff;
+    }
+
+    &.pagenation-permalink {
+        a {
+            padding: 8px 15px;
+        }
+    }
 }
 
 // Footer
