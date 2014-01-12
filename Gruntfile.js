@@ -15,6 +15,7 @@ module.exports = function(grunt){
                 files : {
                     "loveliver-tee/css/style.css" : "loveliver-tee/css/style.less",
                     "public/tumblr/reblographix2/css/style.css" : "public/tumblr/reblographix2/css/style.less",
+                    "public/tumblr/illustfolio/1.3.x/css/style.css" : "public/tumblr/illustfolio/1.3.x/css/style.less",
                 }
             }
         },
@@ -27,7 +28,8 @@ module.exports = function(grunt){
                     "*/*.less",
                     "*/*/*.less",
                     "*/*/*/*.less",
-                    "*/*/*/*/*.less"
+                    "*/*/*/*/*.less",
+                    "*/*/*/*/*/*.less"
                 ],
                 // "tasks"セクションで実行するタスクを指定
                 tasks : [
