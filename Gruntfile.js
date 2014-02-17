@@ -16,6 +16,7 @@ module.exports = function(grunt){
                     "loveliver-tee/css/style.css" : "loveliver-tee/css/style.less",
                     "public/tumblr/reblographix2/css/style.css" : "public/tumblr/reblographix2/css/style.less",
                     "public/tumblr/illustfolio/1.3.x/css/style.css" : "public/tumblr/illustfolio/1.3.x/css/style.less",
+                    "public/tumblr/zen/2.x/css/style.css" : "public/tumblr/zen/2.x/css/style.less",
                 }
             }
         },
