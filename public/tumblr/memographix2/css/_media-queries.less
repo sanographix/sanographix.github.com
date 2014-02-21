@@ -1,0 +1,216 @@
+/*--------------------------------------------------------------
+
+      Media Queries - Retina Display
+
+--------------------------------------------------------------*/
+
+// Retina のデバイス全部に出す
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(            min-resolution: 2dppx) {
+
+}
+
+// Retina かつ iPad 以上のときに出す
+@media
+(-webkit-min-device-pixel-ratio: 2) and (min-device-width: 768px),
+(            min-resolution: 2dppx) and (min-device-width: 768px) {
+
+}
+
+// Retina かつ PC のときだけに出す
+@media
+(-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px),
+(            min-resolution: 2dppx) and (min-device-width: 1025px) {
+
+}
+
+
+/*--------------------------------------------------------------
+
+      Media Queries - Tablet
+
+--------------------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1040px) {
+
+#container {
+    width: 700px;
+}
+
+#main {
+    padding-left: 0;
+}
+
+.entry-meta {
+    position: static;
+    margin-bottom: 1em;
+    width: auto;
+
+    .meta-elements {
+        display: inline;
+        margin-right: 1em;
+    }
+
+}
+
+.post {
+    font-size: 100%;
+
+    .entry-title {
+      font-size: 180%;
+    }
+
+    .entry-content {
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow-x: hidden;
+        }
+    }
+}
+
+}
+
+
+/*--------------------------------------------------------------
+
+      Media Queries - Small Tablet & Smartphone
+
+--------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+
+#container {
+    width: 93.75%;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.mobile-nav-panel {
+    display: block;
+}
+
+.nav {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+
+    &.active {
+        height: auto;
+        overflow: visible;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        background-color: rgba(255,255,255,0.95);
+        border-top: 1px solid #ccc;
+        z-index: 2;
+    }
+
+    ul {
+        display: block;
+
+        li {
+            display: block;
+            width: 100%;
+            margin: 0;
+
+            a {
+                display: block;
+                border: none;
+                padding: 1em .5em;
+                border-bottom: 1px solid #ddd;
+                text-align: left;
+                &:hover {
+                    border: none;
+                }
+            }
+        }
+
+    }
+
+}
+
+#header {
+    margin: 2em 0 4em 0;
+    text-align: center;
+}
+
+.blog-title {
+    float: none;
+}
+
+#main {
+    padding-left: 0;
+}
+
+.entry-meta {
+    position: static;
+    margin-bottom: 1em;
+    width: auto;
+
+    .meta-elements {
+        display: inline;
+        margin-right: 1em;
+    }
+
+}
+
+.post {
+    font-size: 90%;
+
+    .entry-title {
+      font-size: 180%;
+    }
+
+    .entry-content {
+        line-height: 1.8;
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow-x: hidden;
+        }
+    }
+}
+
+// ソーシャルボタン
+.social-buttons {
+
+    li {
+        float: none;
+        padding: 8px 0;
+        margin-right: 0px;
+    }
+}
+
+.footer-ad {
+  padding: 0;
+  background-color: transparent;
+}
+
+.pagenation {
+    span,
+    a {
+        padding: 5px;
+        margin: 0;
+    }
+}
+
+
+}
+
+
+/*--------------------------------------------------------------
+
+      Media Queries - Smartphone
+
+--------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+
+}
