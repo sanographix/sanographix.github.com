@@ -189,6 +189,9 @@ h1,h2,h3,h4,h5,h6 {
 
     a {
         color: @base;
+        &:hover {
+            color: @link;
+        }
     }
 
     .meta-elements {
@@ -201,6 +204,9 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 120%;
         a {
             color: @header;
+            &:hover {
+                color: @link;
+            }
         }
     }
 }
@@ -400,16 +406,74 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
+// link
+
+.link {
+    .entry-title {
+        background: @bg-light;
+        border: 1px solid @border;
+        padding: 8px;
+        .border-radius(5px);
+        a {
+            color: @link;
+        }
+    }
+}
+
+// chat
+
+.quote {
+
+    .entry-content.short {
+        font-size: 140%;
+    }
+
+    .entry-content.medium {
+        font-size: 120%;
+    }
+
+    .entry-content.long {
+        font-size: 100%;
+    }
+
+}
+
+// chat
+
+.ul-chat {
+    list-style: none;
+    margin: 0 !important;
+
+    li {
+        padding: 8px 15px;
+    }
+
+    .odd {
+        background: @bg-light;
+    }
+
+    .label {
+        font-weight: bold;
+    }
+}
+
 .entry-footer {
     font-size: 85%;
     color: @light;
     line-height: 1.5;
     a {
         color: @light;
+        &:hover {
+            color: @link;
+        }
     }
 
     .meta {
         margin-bottom: 1em;
+    }
+
+    .meta-elements {
+        margin-right: 1.5em;
     }
 
 }
@@ -489,11 +553,14 @@ h1,h2,h3,h4,h5,h6 {
     border-top: 5px solid #ddd;
 }
 
-// 新ページャ
+// ページャ
 
 .pagenation {
     text-align: center;
     text-transform: uppercase;
+    font-size: 95%;
+    font-weight: bold;
+    letter-spacing: .1em;
 
     span,
     a {
@@ -505,7 +572,7 @@ h1,h2,h3,h4,h5,h6 {
     }
 
     a {
-        color: @light;
+        color: @base;
         &:hover {
             background-color: @bg-light;
         }
