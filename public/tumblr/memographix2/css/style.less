@@ -5,6 +5,7 @@
 @import "_normalize.less";
 @import "_mixin.less";
 @import "_variable.less";
+@import "_tipsy.less";
 @import "_prettify.less";
 
 /* Common Styles */
@@ -180,7 +181,7 @@ h1,h2,h3,h4,h5,h6 {
 
 // entry-meta
 
-.entry-meta {
+.entry-meta-header {
     position: absolute;
     top: .5em;
     left: -200px;
@@ -457,10 +458,12 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-.entry-footer {
+.entry-meta-footer {
     font-size: 85%;
     color: @light;
     line-height: 1.5;
+    margin-bottom: 1.5em;
+
     a {
         color: @light;
         &:hover {
@@ -469,13 +472,17 @@ h1,h2,h3,h4,h5,h6 {
     }
 
     .meta {
-        margin-bottom: 1em;
+        margin-bottom: .7em;
     }
 
-    .meta-elements {
-        margin-right: 1.5em;
+    .hastags a {
+        margin-right: .5em;
     }
 
+}
+
+.hatena-star-add-button-image {
+    background-image: url('http://sanographix.github.io/public/tumblr/memographix2/images/hatena-star-add-button.png');
 }
 
 // like, reblog button
@@ -485,7 +492,7 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 3px;
     list-style: none;
     .inline-block;
-    margin: 0 0 15px 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -500,8 +507,13 @@ h1,h2,h3,h4,h5,h6 {
     border-right: 1px solid @border;
 }
 
+.notecount-header {
+    margin: 1.5em 0 .5em;
+}
+
 .notecontainer {
-    margin: 20px 0;
+    margin: 0 0 1em;
+    font-style: 90%;
 
     ol {
         margin: 0;
@@ -510,7 +522,7 @@ h1,h2,h3,h4,h5,h6 {
         li {
             list-style: none;
             border-bottom: 1px dashed @border;
-            padding: 5px 0;
+            padding: .5em 0;
 
             .avatar {
                 max-height: 16px;
@@ -528,17 +540,24 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 // ソーシャルボタン
-.social-buttons {
-    .clearfix;
-    margin: 0 0 1em;
-    padding: 0;
 
-    li {
-        float: left;
-        margin-right: 15px;
-        list-style: none;
+.social-buttons {
+    margin: 1em 0;
+
+    div,
+    a,
+    iframe {
+        display: inline-block;
+        vertical-align: middle !important;
+        margin-right: 4px !important;
+    }
+
+    .fb-like {
+        width: auto !important;
+        display: inline-block !important;
     }
 }
+
 
 .footer-ad {
     margin: 1.5em 0;
@@ -551,6 +570,22 @@ h1,h2,h3,h4,h5,h6 {
     margin: 5em auto;
     border: 0;
     border-top: 5px solid #ddd;
+}
+
+// recent
+
+#recent {
+    margin: 1.5em 0;
+    ul {
+        margin: 0;
+        padding: 0;
+        font-style: 110%;
+        li {
+            list-style: none;
+            padding: .6em 0;
+            border-bottom: 1px solid @border;
+        }
+    }
 }
 
 // ページャ
@@ -595,9 +630,38 @@ h1,h2,h3,h4,h5,h6 {
 #footer {
     margin: 3em 0;
     font-size: 70%;
+    .clearfix;
+    line-height: 1.6;
+
+    .footer-blog-title {
+        float: left;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 120%;
+        padding-bottom: .2em;
+        letter-spacing: .2em;
+        margin: .2em 1.5em 0 0;
+        border-bottom: 3px solid @light;
+        &:hover {
+            border-color: @link;
+            a {
+                color: @link;
+            }
+        }
+
+        a {
+            position: relative;
+            left: .1em; // ちょっとずらしてる
+            padding: .4em 0;
+            color: @light;
+        }
+
+    }
+
     .copyright {
         display: block;
     }
+
 }
 
 @import "_media-queries.less";

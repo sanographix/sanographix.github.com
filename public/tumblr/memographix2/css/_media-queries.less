@@ -42,7 +42,7 @@
     padding-left: 0;
 }
 
-.entry-meta {
+.entry-meta-header {
     position: static;
     margin-bottom: 1em;
     width: auto;
@@ -147,7 +147,7 @@
     padding-left: 0;
 }
 
-.entry-meta {
+.entry-meta-header {
     position: static;
     margin-bottom: 1em;
     width: auto;
@@ -179,15 +179,17 @@
 }
 
 // ソーシャルボタン
-.social-buttons {
-
-    li {
-        float: none;
-        padding: 8px 0;
-        margin-right: 0px;
-    }
+.social-buttons-line1,
+.social-buttons-line2 {
+    display: block;
+    text-align: center;
 }
 
+.social-buttons-line1 {
+  margin-bottom: .5em;
+}
+
+// ad
 .footer-ad {
   padding: 0;
   background-color: transparent;
@@ -201,6 +203,12 @@
     }
 }
 
+#footer {
+    .footer-blog-title {
+        float: none;
+        margin-bottom: 1em;
+    }
+}
 
 }
 
