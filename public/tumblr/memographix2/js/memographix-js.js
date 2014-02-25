@@ -13,6 +13,11 @@ function tumblr(resp) {
 }
 
 $(document).ready(function(){
+
+    // text投稿のyoutubeもレスポンシブにする
+    $(".post.text iframe[src*='youtube.com']").wrap("<div class='video-iframe'></div>");
+
+    // fitvid
     $(".video-iframe").fitVids();
 
     $(".mobile-nav-panel").click(function(){
