@@ -428,7 +428,7 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-// chat
+// quote
 
 .quote {
 
@@ -465,6 +465,49 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+/* Answer post */
+
+.answer {
+    .question {
+        .border-radius(5px);
+        padding: 15px;
+        font-size: 110%;
+        background: @bg-light;
+        margin-bottom: 1em;
+        position: relative;
+
+        &:after {
+            top: 100%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        &:after {
+            border-color: rgba(245, 245, 245, 0);
+            border-top-color: @bg-light;
+            border-width: 10px;
+            left: 6.5%;
+            margin-left: -10px;
+        }
+
+    }
+
+    .asker-group {
+        margin-left: 5%;
+    }
+
+    .user-icon {
+        .border-radius(2px);
+        .box-shadow(0,0,0,#fff);
+    }
+}
+
+// meta
+
 .entry-meta-footer {
     font-size: 85%;
     color: @light;
@@ -500,7 +543,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .hatena-star-add-button-image {
-    background-image: url('http://sanographix.github.io/public/tumblr/memographix2/images/hatena-star-add-button.png');
+    background-image: url('../images/hatena-star-add-button.png');
 }
 
 // like, reblog button
