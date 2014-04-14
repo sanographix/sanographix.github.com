@@ -304,18 +304,19 @@ hr {
 
 // ソーシャルボタン
 .social-buttons {
-    .clearfix;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    margin: 1em 0;
 
-    li {
+    div,
+    a,
+    iframe {
         display: inline-block;
-        margin-right: 15px;
-        list-style: none;
-        &:last-child {
-            margin-right: 0;
-        }
+        vertical-align: top !important;
+        margin-right: 4px !important;
+    }
+
+    .fb-like {
+        width: 70px !important;
+        display: inline-block !important;
     }
 }
 
