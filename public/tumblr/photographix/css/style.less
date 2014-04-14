@@ -114,7 +114,7 @@ hr {
 // post
 
 .post {
-    text-align: center;
+    text-align: left;
     padding-bottom: 40px;
     margin-bottom: 50px;
     border-bottom: 1px solid @border;
@@ -122,7 +122,8 @@ hr {
 
 .date {
     letter-spacing: .3em;
-    margin-bottom: 1.5em;
+    margin-bottom: .5em;
+    color: @light;
 }
 
 .entry-title {
@@ -246,6 +247,11 @@ hr {
     a {
         color: @light;
     }
+
+    .meta {
+        margin-bottom: 1em;
+    }
+
     .meta-elements,
     .hatena-star-star-container {
         padding: 0 .5em;
@@ -300,6 +306,28 @@ hr {
         }
 
     }
+}
+
+// like, reblog button
+
+.like_and_reblog_buttons {
+    border: 1px solid @border;
+    border-radius: 3px;
+    list-style: none;
+    .inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.like_and_reblog_buttons li {
+    float: left;
+    margin: 0;
+    padding: 9px 17px;
+    height: 16px;
+}
+
+.like_and_reblog_buttons li:first-child {
+    border-right: 1px solid @border;
 }
 
 // ソーシャルボタン
