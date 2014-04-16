@@ -669,6 +669,77 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+// Hatena Bookmark Widget
+
+.hatena-bookmark-module {
+    margin: 1.5em 0;
+
+    .hatena-bookmark-widget-title {
+        margin: 1.5em 0 .5em;
+        font-size: 1.17em;
+
+        a {
+            color: @header;
+            font-weight: bold;
+        }
+
+        img {
+            display: none;
+        }
+
+    }
+
+    .hatena-bookmark-widget-body {
+        margin-bottom: .5em;
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            padding: .6em 0;
+            border-bottom: 1px solid @border;
+            padding-left: 72px;
+            position: relative;
+
+            .hatena-bookmark-count {
+                position: absolute;
+                top: 14px;
+                left: 0;
+                display: inline-block;
+                font-size: 75%;
+
+                a {
+                    background: #fff;
+                    color: @light;
+                    border: 1px solid @border;
+                    padding: .15em .3em;
+                    border-radius: 3px;
+                }
+
+            }
+
+            em {
+                font-style: normal;
+                font-weight: bold;
+            }
+
+        }
+
+    }
+
+    .hatena-bookmark-widget-footer a {
+        color: #aaa;
+        font-size: 80%;
+        font-weight: bold;
+        font-family: 'Century Gothic', 'Futura';
+    }
+
+}
+
+
 // likebox
 
 .likebox-container {
