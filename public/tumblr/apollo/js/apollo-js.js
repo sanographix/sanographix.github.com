@@ -35,6 +35,11 @@ $(document).ready(function(){
       $('.hatena-star-add-button').attr("title","★をつける");
     },3000);
 
+    // 検索フォーム
+    $(".search-nav a").click(function(){
+      $(".search-form").toggleClass("active");
+      return false;
+    });
 
     $(window).load(function(){
 

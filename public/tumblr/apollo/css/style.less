@@ -135,6 +135,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 85%;
     text-transform: uppercase;
     float: right;
+    position: relative; //search-form
 
     ul {
         .clearfix;
@@ -155,6 +156,19 @@ h1,h2,h3,h4,h5,h6 {
             color: @link;
         }
     }
+}
+
+// search-form
+.search-form {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 300px;
+}
+
+.search-form.active {
+    display: block;
 }
 
 
