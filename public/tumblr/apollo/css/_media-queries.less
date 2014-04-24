@@ -97,14 +97,14 @@
     width: 100%;
     overflow: hidden;
     margin: 0;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: @base;
 
     &.active {
         height: auto;
         overflow: visible;
-        position: absolute;
-        top: 45px;
-        left: 0;
-        background-color: @base;
         .transition;
         z-index: 2;
     }
