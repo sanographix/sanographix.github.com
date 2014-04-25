@@ -36,7 +36,7 @@ $(document).ready(function(){
     },3000);
 
     // 検索フォーム
-    $(".search-nav a").click(function(){
+    $(".nav-search a").click(function(){
       $(".search-form").toggleClass("active");
       return false;
     });
