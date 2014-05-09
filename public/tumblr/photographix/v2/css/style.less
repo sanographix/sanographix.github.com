@@ -372,11 +372,14 @@ h1,h2,h3,h4,h5,h6 {
         border-bottom: 3px solid @link;
     }
 
+    .date {
+        font-size: 90%;
+        margin-bottom: .8em;
+    }
+
 }
 
 .date {
-    font-size: 90%;
-    margin-bottom: .8em;
     a {
         color: @light;
         margin-right: 1em;
@@ -534,6 +537,20 @@ h1,h2,h3,h4,h5,h6 {
 
     td {
         word-break: break-all; // tableだと word-wrap がきかない
+    }
+}
+
+.published {
+    font-size: 90%;
+    a {
+        color: @light;
+    }
+
+    .avatar {
+        width: 24px;
+        height: 24px;
+        border-radius: 24px;
+        vertical-align: middle;
     }
 }
 
