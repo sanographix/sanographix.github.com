@@ -26,11 +26,12 @@ $(document).ready(function(){
   $(window).load(function(){
 
     // スマホでphotosetの中をwidth100%にする
-    if ($(window).width() < 480) {
+    if ($(window).width() < 767) {
 
       $('iframe.photoset').contents().find('.photoset_row').css({
         width : 'auto',
-        height : 'auto'
+        height : 'auto',
+        margin : '0'
       });
 
       $('iframe.photoset').contents().find('.photoset_photo').css({
@@ -39,7 +40,7 @@ $(document).ready(function(){
       });
 
       $('iframe.photoset').contents().find('.photoset_row img').css({
-        width : '300px',
+        width : '100%',
         margin : '0 0 0 0'
       });
 
