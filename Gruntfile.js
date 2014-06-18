@@ -27,11 +27,7 @@ module.exports = function(grunt){
             less : {
                 // "files"セクションで監視するファイルの条件を指定
                 files : [
-                    "*/*.less",
-                    "*/*/*.less",
-                    "*/*/*/*.less",
-                    "*/*/*/*/*.less",
-                    "*/*/*/*/*/*.less"
+                    "**/*.less"
                 ],
                 // "tasks"セクションで実行するタスクを指定
                 tasks : [
