@@ -725,21 +725,22 @@ h1,h2,h3,h4,h5,h6 {
         margin-bottom: .5em;
 
         ul {
-            margin: 0;
+            margin: 0 -10px;
             padding: 0;
         }
 
         li {
             list-style: none;
-            padding: .7em 0;
-            border-bottom: 1px solid @border;
-            padding-left: 72px;
             position: relative;
+            .border-box;
+            width: 33.33333%;
+            padding: 1.5em 10px 0 10px;
+            height: 6em;
 
             .hatena-bookmark-count {
                 position: absolute;
                 top: 14px;
-                left: 0;
+                left: 10px;
                 display: inline-block;
                 font-size: 75%;
 
@@ -764,6 +765,10 @@ h1,h2,h3,h4,h5,h6 {
 
         }
 
+    }
+
+    .hatena-bookmark-widget-footer {
+        clear: both;
     }
 
     .hatena-bookmark-widget-footer a {
