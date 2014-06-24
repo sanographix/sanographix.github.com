@@ -734,26 +734,34 @@ h1,h2,h3,h4,h5,h6 {
             position: relative;
             .border-box;
             width: 33.33333%;
-            padding: 2em 10px 0 10px;
-            height: 6em;
+            padding: 2.5em 10px 0 10px;
+            height: 6.5em;
             float: left;
+
+            a {
+                color: @base;
+                font-weight: bold;
+            }
 
             .hatena-bookmark-count {
                 position: absolute;
-                top: 0;
+                top: .4em;
                 left: 10px;
                 display: inline-block;
-                font-size: 75%;
+                font-size: 80%;
 
                 a {
-                    background: #fff;
-                    color: @light;
-                    border: 1px solid @border;
-                    padding: .15em .3em;
-                    border-radius: 3px;
-                    &:hover {
-                        color: #00A5DE;
-                        border-color: #00A5DE;
+                    background: #00A5DE;
+                    color: #fff;
+                    padding: .4em .5em;
+                    border-radius: 4px;
+                    font-weight: normal;
+                    &:after {
+                        border-color: rgba(6, 123, 213, 0);
+                        border-top-color: #00A5DE;
+                        border-width: 5px;
+                        left: 50%;
+                        margin-left: -5px;
                     }
                 }
 
