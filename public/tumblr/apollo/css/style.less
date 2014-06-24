@@ -734,13 +734,16 @@ h1,h2,h3,h4,h5,h6 {
             position: relative;
             .border-box;
             width: 33.33333%;
-            padding: 2.5em 10px 0 10px;
+            padding: 2em 10px 0 10px;
             height: 6.5em;
             float: left;
 
             a {
                 color: @base;
                 font-weight: bold;
+                &:hover {
+                    color: @hover;
+                }
             }
 
             .hatena-bookmark-count {
