@@ -18,6 +18,7 @@ module.exports = function(grunt){
                     "public/tumblr/illustfolio/1.3.x/css/style.css" : "public/tumblr/illustfolio/1.3.x/css/style.less",
                     "public/tumblr/zen/2.x/css/style.css" : "public/tumblr/zen/2.x/css/style.less",
                     "public/tumblr/apollo/css/style.css" : "public/tumblr/apollo/css/style.less",
+                    "public/tumblr/tokusetsu2/css/style.css" : "public/tumblr/tokusetsu2/css/style.less"
                 }
             }
         },
