@@ -1,0 +1,115 @@
+/*--------------------------------------------------------------
+
+      Media Queries - Retina Display
+
+--------------------------------------------------------------*/
+
+// Retina のデバイス全部に出す
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(            min-resolution: 2dppx) {
+
+}
+
+// Retina かつ iPad 以上のときに出す
+@media
+(-webkit-min-device-pixel-ratio: 2) and (min-device-width: 768px),
+(            min-resolution: 2dppx) and (min-device-width: 768px) {
+
+}
+
+// Retina かつ PC のときだけに出す
+@media
+(-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px),
+(            min-resolution: 2dppx) and (min-device-width: 1025px) {
+
+}
+
+@media (max-width: 1320px) {
+
+#container {
+    width: 90%;
+}
+
+}
+
+/*--------------------------------------------------------------
+
+      Media Queries - Tablet
+
+--------------------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1040px) {
+
+.entry-footer-right {
+    width: 300px;
+}
+
+.entry-footer-left {
+    margin-right: -330px;
+    &>* {
+        margin-right: 330px;
+    }
+}
+
+}
+
+/*--------------------------------------------------------------
+
+      Media Queries - Small Tablet & Smartphone
+
+--------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+
+#container {
+    width: 93.75%;
+}
+
+#header {
+    margin: 2em 0;
+}
+
+.blog-title {
+    font-size: 170%;
+}
+
+.nav li {
+    font-size: 80%;
+    margin-left: 1em;
+}
+
+.entry-footer-right,
+.entry-footer-left {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+
+    .section {
+      margin-bottom: 1.5em;
+    }
+}
+
+.entry-footer-left {
+    &>* {
+        margin-right: 0px;
+    }
+}
+
+}
+
+
+/*--------------------------------------------------------------
+
+      Media Queries - Smartphone
+
+--------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+
+#related .photo {
+    width: 98px;
+    height: 98px;
+}
+
+}

@@ -1,0 +1,710 @@
+/*
+    Main CSS
+*/
+
+@import "_normalize.less";
+@import "_mixin.less";
+@import "_variable.less";
+
+/* Common Styles */
+
+// Common
+
+html,
+body {
+    font-family: "proxima-nova", 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+    background: @bg;
+    color: @base;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: @link;
+    text-decoration: none;
+
+    &:hover {
+        color: @hover;
+    }
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    a,a:hover {
+        color: @header;
+        text-decoration: none;
+    }
+}
+
+// 手書き文字
+.handy {
+    font-family: 'Open Sans Condensed', 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+
+// ボタン
+
+.btn {
+    .inline-block;
+    text-align: center;
+    padding: .6em 1.2em;
+    cursor: pointer;
+    line-height: 1.5;
+    font-size: 90%;
+    .border-radius(3px);
+    overflow: hidden;
+    color: @base;
+    background-color: @btn;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,.15);
+    &:hover {
+        background-color: @btn-hover;
+        color: @base;
+        text-decoration: none;
+        border: 1px solid rgba(0,0,0,.2);
+    }
+}
+
+.btn-primary {
+    background-color: @btn-primary;
+    color: #fff;
+    border: 1px solid @btn-primary;
+    &:hover {
+        background-color: @btn-primary-hover;
+        color: #fff;
+        border: 1px solid @btn-primary-hover;
+    }
+}
+
+.btn-large {
+    padding: .5em 2em;
+    font-size: 120%;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.btn-full {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* End Common Styles */
+
+#container {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// header
+
+#header {
+    margin: 5em 0 3em;
+    .clearfix;
+    text-align: center;
+}
+
+.blog-title-wrapper {
+}
+
+.blog-title {
+    margin: 0;
+    .handy;
+    font-size: 240%;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-weight: normal;
+}
+
+.blog-description {
+    margin: 0;
+    font-size: 95%;
+    color: @light;
+    .handy;
+    font-weight: normal;
+
+    p {
+        margin: 0;
+    }
+}
+
+.nav {
+    .handy;
+    font-size: 120%;
+    text-align: center;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    padding: .5em 0;
+    margin: 1em 0;
+
+    ul {
+        list-style: none;
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin: .3em 0 .3em 2em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: @header;
+    }
+
+}
+
+// search（not in use）
+
+.search {
+    min-height: 35px;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    padding: .5em 0;
+    margin: 2em 0;
+}
+
+#gsc-iw-id1 {
+    border: none !important;
+    box-shadow: none !important;
+
+}
+
+.gsc-control-cse {
+    padding: 0;
+}
+
+input.gsc-input {
+    font-size: 120%;
+}
+
+
+// post
+
+.post {
+    margin-bottom: 4em;
+
+    .notice {
+        color: @light;
+    }
+}
+
+.post.photo {
+    .entry-content {
+        text-align: center;
+    }
+}
+
+.entry-title {
+    .handy;
+    font-size: 300%;
+    margin: 0 0 .5em 0;
+}
+
+// entry-content の中の書式
+
+.entry-content {
+    font-size: 105%;
+
+    p {
+        margin: 0 0 1em 0;
+    }
+
+    img,
+    video {
+        max-width: 100%;
+        height: auto;
+        max-height: 1280px;
+    }
+
+    // Flickr で max-width 指定したときのアスペクト比をなおす
+     a[title*="Flickr"] img {
+        height: auto !important;
+     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 1em 0 0.8em 0;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 170%;
+    }
+
+    h2 {
+        font-size: 160%;
+    }
+
+    h3 {
+        font-size: 140%;
+    }
+
+    h4 {
+        font-size: 130%;
+    }
+
+    h5 {
+        font-size: 110%;
+    }
+
+    h6 {
+        font-size: 100%;
+    }
+
+    ul,
+    ol,
+    dd {
+        margin: 0 0 1em 1.5em;
+        padding: 0;
+
+        li {
+            ul,ol {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        border-bottom: 1em;
+        margin-bottom: 1em;
+        width: 100%;
+        overflow: auto;
+        display: block;
+    }
+
+    table th,
+    table td {
+        border: 1px solid #ddd;
+        padding: 5px 10px;
+    }
+
+    table th {
+        background: #fafafa;
+    }
+
+
+    .hatena-asin-detail li {
+        line-height: 1.4;
+    }
+
+    blockquote {
+        margin: 1.5em 3em;
+        padding: 5px 20px;
+        border-left: 2px solid #aaa;
+        color: #777;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+    pre,
+    code {
+        font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+    }
+
+    pre {
+        padding: 15px;
+        background: @bg-light;
+        border: none;
+        .border-radius(3px);
+        word-wrap: normal;
+        overflow-x: auto;
+        font-size: 100%;
+        line-height: 1.3;
+
+        &>code {
+            margin: 0;
+            padding: 0;
+            white-space: pre;
+            border: none;
+            background-color: transparent;
+            font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+        }
+    }
+
+    code {
+        font-size: 90%;
+        margin: 0 2px;
+        padding: 0px 5px;
+        border: 1px solid @border;
+        background-color: #f7f7f2;
+        border-radius: 3px;
+    }
+
+    .amazlet-box {
+        border: 1px solid @border;
+        padding: 15px;
+        margin-bottom: 1em !important;
+        .border-radius(4px);
+    }
+
+    .sticky-itslink,
+    .iTunesLinker-box {
+        border: 1px solid @border;
+        padding: 15px;
+        margin-bottom: 1em;
+        .border-radius(4px);
+    }
+
+    // twilog
+
+    .tl-tweet {
+        margin-bottom: 10px;
+        border-bottom: 1px dashed @border;
+        padding-bottom: 10px;
+
+        .tl-text {
+            margin-bottom: 5px;
+        }
+
+        .tl-posted {
+            font-size: 85%;
+            color: @light;
+            margin: 0;
+        }
+    }
+
+    ul.tl-tweets {
+        margin: 0 0 10px 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed @border;
+            padding-bottom: 10px;
+        }
+    }
+
+    // gistでtableおかしいのを打ち消す
+    .gist {
+        table {
+            margin: 0;
+            border: 0;
+            td {
+                border: 0;
+            }
+        }
+    }
+
+    hr {
+        width: 20%;
+        margin: 3em auto;
+        border: 0;
+        border-top: 3px solid @border;
+    }
+
+}
+
+// index meta
+
+.index-meta {
+    margin-top: .8em;
+
+    .permalink {
+        font-weight: bold;
+        border-bottom: 3px solid @link;
+    }
+
+    .date {
+        font-size: 90%;
+        margin-bottom: .8em;
+    }
+
+}
+
+.date {
+    a {
+        color: @light;
+        margin-right: 1em;
+    }
+}
+
+// entry footer
+
+.entry-footer {
+    margin-top: 2em;
+    .clearfix;
+
+    .section {
+        margin-bottom: 2em;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 90%;
+        color: @light;
+        margin-top: 0;
+    }
+
+}
+
+.hastags {
+    a {
+        margin-right: .8em;
+    }
+}
+
+.entry-footer-left {
+    float: left;
+    width: 100%;
+    margin-right: -380px;
+    margin-bottom: 2em;
+
+    &>* {
+        margin-right: 380px;
+    }
+
+    .section {
+        margin-bottom: 3em;
+    }
+}
+
+.entry-footer-right {
+    float: right;
+    width: 336px;
+}
+
+.like_and_reblog_buttons {
+    margin: 0 0 1em;
+    padding: 0;
+    display: table;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid @border;
+    table-layout: fixed;
+
+    li {
+        display: table-cell;
+        text-align: center;
+        padding: .5em 8px;
+        vertical-align: middle;
+
+        &:first-child {
+            border-right: 1px solid @border;
+        }
+
+        a {
+            margin: auto;
+        }
+
+    }
+
+}
+
+// 最近の投稿プラグイン
+
+#related {
+    .clearfix;
+    margin-bottom: 10px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        .clearfix;
+    }
+
+    li {
+        list-style: none;
+        float: left;
+        vertical-align: middle;
+        text-align: center;
+
+        a {
+            color: @light;
+            text-decoration: none;
+        }
+    }
+
+    .photo {
+        width: 178px;
+        height: 118px;
+        background-size: cover;
+        background-position: center;
+        margin-right: 2px;
+        margin-bottom: 2px;
+    }
+
+    li:last-child {
+        .photo,
+        .post_title {
+            margin-right: 0;
+        }
+    }
+}
+
+// exif
+
+.exif {
+
+    table {
+        width: 100%;
+    }
+
+    th,td {
+        padding: 7px 0px;
+        border-bottom: 1px solid @border;
+    }
+
+    tr:first-child {
+        th,td {
+            padding-top: 0;
+        }
+    }
+
+
+    tr:last-child {
+        th,td {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    th {
+        font-size: 11px;
+        color: @light;
+        font-weight: normal;
+        text-align: left;
+        width: 30%;
+        padding-right: 10px;
+    }
+
+    td {
+        word-break: break-all; // tableだと word-wrap がきかない
+    }
+}
+
+.published {
+    a {
+        color: @light;
+    }
+
+    .avatar {
+        width: 34px;
+        height: 34px;
+        border-radius: 34px;
+        vertical-align: middle;
+    }
+
+    .date {
+        margin-top: .5em;
+    }
+}
+
+.follow-button {
+    margin: .5em 0;
+
+    .follow-tw,
+    .follow-google {
+        display: inline-block;
+        margin: .5em 0;
+    }
+}
+
+// notescount
+
+.notecontainer {
+
+    .notes {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            padding: 5px 0;
+            border-bottom: 1px solid @border;
+            color: @light;
+            font-size: 85%;
+
+            a {
+                font-weight: bold;
+                color: #777;
+                text-decoration: none;
+            }
+
+            .avatar {
+                max-height: 16px;
+                width: auto;
+                vertical-align: middle;
+                .border-radius(2px);
+                margin-right: 3px;
+            }
+
+            blockquote {
+                margin: 1em 1em 1em 0;
+                padding-left: 1em;
+                border-left: 3px solid #dfdfdf;
+
+                a {
+                    font-weight: normal;
+                    color: @light;
+                }
+            }
+
+        }
+
+    }
+}
+
+// ページャ
+
+.pagenation {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 105%;
+    font-weight: bold;
+    letter-spacing: .1em;
+    .handy;
+
+    span,
+    a {
+        display: inline-block;
+        min-width: 1.2em;
+        padding: 6px 8px;
+        margin: 1px;
+        .border-radius(3px);
+    }
+
+    a {
+        color: @base;
+        &:hover {
+            background-color: @bg-light;
+        }
+    }
+
+    .current-page {
+        background: #ccc;
+        color: #fff;
+    }
+
+    &.pagenation-permalink {
+        a {
+            padding: 8px 15px;
+        }
+    }
+}
+
+// footer
+
+#footer {
+    margin: 3em 0;
+    .handy;
+    text-align: center;
+}
+
+@import "_media-queries.less";
