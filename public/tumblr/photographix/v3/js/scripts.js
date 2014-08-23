@@ -102,7 +102,7 @@ $(function(){
     itemSelector : ".post",
     animate      : false,
     loading: {
-        img: "../images/loading.gif",
+        img: "//sanographix.github.io/public/tumblr/photographix/v3/images/loading.gif",
         msgText: "Loading...",
         finishedMsg: 'The End'
     }
