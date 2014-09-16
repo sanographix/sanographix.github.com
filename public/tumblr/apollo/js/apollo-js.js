@@ -47,7 +47,7 @@ $(document).ready(function(){
     // 記事一覧へボタン
     $(window).scroll(function () {
         //100pxスクロールしたら
-        if ($(this).scrollTop() > 300) {
+        if ($(this).scrollTop() > 800) {
             //フェードインで表示
             $('#back-top').fadeIn();
         } else {
