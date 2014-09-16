@@ -41,6 +41,20 @@ $(document).ready(function(){
       return false;
     });
 
+    //記事一覧ボタン、初期は非表示
+    $("#back-top").hide();
+
+    // 記事一覧へボタン
+    $(window).scroll(function () {
+        //100pxスクロールしたら
+        if ($(this).scrollTop() > 300) {
+            //フェードインで表示
+            $('#back-top').fadeIn();
+        } else {
+            $('#back-top').fadeOut();
+        }
+    });
+
     $(window).load(function(){
 
       // スマホでphotosetの中をwidth100%にする
