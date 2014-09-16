@@ -41,19 +41,6 @@ $(document).ready(function(){
       return false;
     });
 
-    // 無限スクロール (mmgr only)
-    $('.mmgr-infinitescroll').infinitescroll({
-      navSelector  : ".pagenation-index",
-      nextSelector : ".pagenation-index a.next",
-      itemSelector : ".post",
-      animate      : false,
-      loading: {
-          img: "//sanographix.github.io/public/tumblr/photographix/v3/images/loading.gif",
-          msgText: "Loading...",
-          finishedMsg: 'The End'
-      }
-    });
-
     $(window).load(function(){
 
       // スマホでphotosetの中をwidth100%にする
