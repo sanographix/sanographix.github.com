@@ -1049,4 +1049,28 @@ div.likebox-container .fb_iframe_widget span{
     }
 }
 
+// 記事一覧へ
+#tumblr_teaser_follow {
+    display: none; // 一時的に消す
+}
+
+#back-top {
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+    z-index: 9999;
+
+    a {
+        background: #fff;
+        color: @light;
+        border: 1px solid @border;
+        padding: .15em .3em;
+        border-radius: 3px;
+        &:hover {
+            color: @link;
+        }
+    }
+}
+
+
 @import "_media-queries.less";
