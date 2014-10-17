@@ -85,6 +85,14 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+.btn.btn-b {
+    color: #fff;
+    background-color: @btn-b;
+    &:hover {
+        background-color: darken(@btn-b, 8%);
+    }
+}
+
 // テキストを画像で置換するときにこの mixin を呼び出すと便利
 
 .replace {
