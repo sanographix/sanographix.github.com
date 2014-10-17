@@ -285,6 +285,28 @@
 
 }
 
+.social-share-units {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+    li {
+        display: table-cell;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 90%;
+        box-sizing: border-box;
+        padding: 1em 0;
+        border-radius: 0;
+    }
+}
+
+
 }
 
 
@@ -303,23 +325,8 @@
 }
 
 .social-share-units {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-
-    li {
-        display: table-cell;
-        padding-right: .5em;
-        &:last-child {
-            padding-right: 0;
-        }
-    }
-
     .btn {
-        width: 100%;
-        font-size: 100%;
-        box-sizing: border-box;
-        padding: 1em;
+        font-size: 70%;
     }
 }
 
