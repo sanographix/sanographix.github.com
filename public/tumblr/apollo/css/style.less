@@ -69,6 +69,22 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: .5em;
 }
 
+.btn.btn-tw {
+    color: #fff;
+    background-color: @btn-tw;
+    &:hover {
+        background-color: darken(@btn-tw, 8%);
+    }
+}
+
+.btn.btn-fb {
+    color: #fff;
+    background-color: @btn-fb;
+    &:hover {
+        background-color: darken(@btn-fb, 8%);
+    }
+}
+
 // テキストを画像で置換するときにこの mixin を呼び出すと便利
 
 .replace {
@@ -692,6 +708,21 @@ h1,h2,h3,h4,h5,h6 {
     margin: 5em auto;
     border: 0;
     border-top: 5px solid #ddd;
+}
+
+// ヘッダとフッタのソーシャルボタン
+.social-share-units {
+    padding: 0;
+    margin: 1em 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+    }
+
+    .btn {
+        font-size: 90%;
+    }
 }
 
 // recent
