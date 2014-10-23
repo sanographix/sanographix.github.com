@@ -1122,27 +1122,38 @@ div.likebox-container .fb_iframe_widget span{
     margin: 1em 0;
 }
 
-// 記事一覧へ
+// タグリスト
 
-#back-top {
-    position: fixed;
-    bottom: 8px;
-    right: 8px;
-    z-index: 9999;
+.tag-list {
+    margin: 2em 0;
 
-    a {
-        display: inline-block;
-        background: #fff;
-        color: @light;
-        border: 1px solid @border;
-        padding: .5em .7em;
-        border-radius: 3px;
-        font-size: 90%;
-        &:hover {
-            color: @link;
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            display: inline;
+            margin-right: 1em;
+            line-height: 1.8;
+            color: @light;
+
+            a {
+                color: @light;
+            }
+
+            &:hover {
+                color: @link;
+                a {
+                    color: @link;
+                }
+            }
         }
     }
 }
+
+
+
 
 
 @import "_media-queries.less";
