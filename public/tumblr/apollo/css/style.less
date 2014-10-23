@@ -224,6 +224,26 @@ h1,h2,h3,h4,h5,h6 {
 
     .entry-header {
         margin-bottom: 2em;
+
+        // tags
+        .meta-elements {
+            font-size: 85%;
+            color: @light;
+            line-height: 1.5;
+            margin-top: .5em;
+
+            a {
+                color: @light;
+                &:hover {
+                    color: @link;
+                }
+            }
+
+            .hastags a {
+                margin-right: .5em;
+            }
+        }
+
     }
 
     .entry-title {
@@ -1121,39 +1141,5 @@ div.likebox-container .fb_iframe_widget span{
     text-align: center;
     margin: 1em 0;
 }
-
-// タグリスト
-
-.tag-list {
-    margin: 2em 0;
-
-    ul {
-        margin: 0;
-        padding: 0;
-
-        li {
-            list-style: none;
-            display: inline;
-            margin-right: 1em;
-            line-height: 1.8;
-            color: @light;
-
-            a {
-                color: @light;
-            }
-
-            &:hover {
-                color: @link;
-                a {
-                    color: @link;
-                }
-            }
-        }
-    }
-}
-
-
-
-
 
 @import "_media-queries.less";
