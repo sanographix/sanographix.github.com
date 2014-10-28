@@ -1,6 +1,8 @@
 module.exports = function(grunt){
     grunt.loadNpmTasks("grunt-contrib-less");
     grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     grunt.initConfig({
 
@@ -23,6 +25,22 @@ module.exports = function(grunt){
             }
         },
 
+        // js-concat
+        concat: {
+            dist: {
+                src: 'public/tumblr/mmgr/js/libs/*.js',
+                dest: 'public/tumblr/mmgr/js/scripts.js'
+            }
+        },
+
+        // js-uglify
+        uglify: {
+            build: {
+                src: 'public/tumblr/mmgr/js/scripts.js',
+                dest: 'public/tumblr/mmgr/js/scripts.min.js'
+            }
+        },
+
         watch : {
             // ラベルは"less"にしてみます
             less : {
@@ -34,6 +52,10 @@ module.exports = function(grunt){
                 tasks : [
                     "less:dist"
                 ]
+            },
+            scripts : {
+                files : ["public/tumblr/mmgr/js/libs/*.js"],
+                tasks : ['concat', 'uglify']
             }
         }
 

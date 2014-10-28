@@ -7,6 +7,8 @@
   "devDependencies": {
     "grunt": "~0.4.0",
     "grunt-contrib-less": "*",
-    "grunt-contrib-watch": "*"
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*"
   }
 }
