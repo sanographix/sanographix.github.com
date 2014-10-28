@@ -148,10 +148,16 @@
 
 // mmgr-nav
 .mmgr-nav {
+    position: absolute;
+    top: 100px;
+    left: 0;
     width: 100%;
     overflow: hidden;
     height: 50px;
+    text-align: left;
     background-color: @bg-light;
+    border-top: 1px solid @border;
+    border-bottom: 1px solid @border;
 
     ul {
         white-space: nowrap;
@@ -166,6 +172,11 @@
             margin-right: 1em;
             &:first-child {
                 margin-left: 10px;
+            }
+
+            a {
+                padding: 1em 0;
+                display: inline-block;
             }
         }
     }
