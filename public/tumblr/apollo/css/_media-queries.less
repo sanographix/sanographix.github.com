@@ -146,6 +146,33 @@
 
 }
 
+// mmgr-nav
+.mmgr-nav {
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+    background-color: @bg-light;
+    margin-bottom: 20px;
+    font-size: 105%;
+
+    ul {
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 30px;
+
+        li {
+            display: inline-block;
+            float: none;
+            margin-right: 1em;
+            &:first-child {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
 .nav-search,
 .nav-rss {
     display: none !important;
