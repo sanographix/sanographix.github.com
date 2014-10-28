@@ -189,6 +189,41 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+// mmgr-nav
+.mmgr-nav {
+    margin: 10px 0;
+    font-size: 85%;
+    text-transform: uppercase;
+    float: right;
+    position: relative; //search-form
+
+    ul {
+        .clearfix;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        float: left;
+        margin: .3em 0 .3em 2em;
+
+        img {
+            vertical-align: middle;
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: @base;
+        &:hover {
+            color: @link;
+        }
+    }
+}
+
+
 // search-form, rss
 .nav-search,
 .nav-rss {
