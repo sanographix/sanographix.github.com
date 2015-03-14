@@ -1018,6 +1018,9 @@ div.likebox-container .fb_iframe_widget span{
         -ms-transform: rotate(-135deg);
         border-top: 3px solid @base;
         border-right: 3px solid @base;
+        &:hover {
+            border-color: @link;
+        }
     }
 
     &.pager-arrow-prev:after {
@@ -1031,23 +1034,9 @@ div.likebox-container .fb_iframe_widget span{
         -ms-transform: rotate(45deg);
         border-top: 3px solid @base;
         border-right: 3px solid @base;
-    }
-
-    .pager-arrow-border {
-        display: table-cell;
-        width: 1.5em;
-        height: 1.5em;
-        background: @base;
-    }
-
-    .pager-arrow-mask {
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        position: relative;
-        top: 1px;
-        right: 1px;
+        &:hover {
+            border-color: @link;
+        }
     }
 
 }
