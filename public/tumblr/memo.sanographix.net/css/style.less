@@ -981,7 +981,6 @@ div.likebox-container .fb_iframe_widget span{
 
     a {
         color: @base;
-        display: table;
         &:hover {
             color: @link;
         }
@@ -994,23 +993,25 @@ div.likebox-container .fb_iframe_widget span{
     .pager-arrow-next {
         position: absolute;
         top: 0;
-        left: .5em;
+        left: 0;
     }
 
     .pager-arrow-prev {
         position: absolute;
         top: 0;
-        right: .5em;
+        right: 0;
     }
 }
 
 // 矢印
 .pager-arrow {
     vertical-align: middle;
-    content: "";
-    width: 15px;
-    height: 15px;
-    display: block;
+    &:after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        display: block;
+    }
 
     &.pager-arrow-next:before {
         transform: rotate(-135deg);
