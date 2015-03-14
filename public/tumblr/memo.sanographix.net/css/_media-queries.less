@@ -1,0 +1,315 @@
+/*--------------------------------------------------------------
+
+      Media Queries - Retina Display
+
+--------------------------------------------------------------*/
+
+// Retina のデバイス全部に出す
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(            min-resolution: 2dppx) {
+
+}
+
+// Retina かつ iPad 以上のときに出す
+@media
+(-webkit-min-device-pixel-ratio: 2) and (min-device-width: 768px),
+(            min-resolution: 2dppx) and (min-device-width: 768px) {
+
+}
+
+// Retina かつ PC のときだけに出す
+@media
+(-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px),
+(            min-resolution: 2dppx) and (min-device-width: 1025px) {
+
+}
+
+
+/*--------------------------------------------------------------
+
+      Media Queries - Tablet
+
+--------------------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1040px) {
+
+#container,
+.container {
+    width: 700px;
+}
+
+#main {
+    padding-left: 0;
+}
+
+.entry-meta-header {
+    position: static;
+    margin-bottom: .5em;
+    width: auto;
+
+    .meta-elements {
+        display: inline;
+        margin-right: 1em;
+    }
+
+}
+
+.post {
+    font-size: 100%;
+
+    .entry-title {
+      font-size: 180%;
+    }
+
+    .entry-content {
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow-x: hidden;
+        }
+    }
+}
+
+.hatena-bookmark-module {
+    .hatena-bookmark-widget-body {
+        li {
+        }
+    }
+}
+
+}
+
+
+/*--------------------------------------------------------------
+
+      Media Queries - Small Tablet & Smartphone
+
+--------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+
+#container,
+.container {
+    width: 93.75%;
+    word-wrap: break-word;
+}
+
+#header {
+    text-align: center;
+}
+
+.blog-title {
+    float: none;
+    margin: 10px 0;
+}
+
+#main {
+    padding-left: 0;
+}
+
+.entry-meta-header {
+    position: static;
+    margin-bottom: .5em;
+    width: auto;
+    font-size: 70%;
+
+    .meta-elements {
+        display: inline;
+        margin-right: 1em;
+    }
+
+}
+
+.post {
+    font-size: 90%;
+
+    .entry-title {
+      font-size: 150%;
+    }
+
+    .entry-content {
+        line-height: 1.8;
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow-x: hidden;
+        }
+
+        blockquote {
+            margin: 1em 0;
+        }
+
+        table {
+            th,
+            td {
+                word-break: break-all;
+            }
+        }
+
+        iframe {
+          width: 100% !important;
+        }
+
+    }
+}
+
+.footer-ad {
+    text-align: center;
+}
+
+.pagenation {
+    span,
+    a {
+        padding: 5px;
+        margin: 0;
+    }
+}
+
+#footer {
+    .footer-blog-title {
+        float: none;
+        margin-bottom: 1em;
+    }
+}
+
+// footer
+.footer-wrapper {
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+
+        [class*=span] {
+            float: none;
+            padding: 0;
+            width: auto !important;
+            margin-bottom: 2em;
+        }
+
+    }
+
+}
+
+.social-share-units {
+
+    li {
+
+        &:first-child .btn {
+            border-radius: 3px 0 0 3px;
+        }
+
+        &:last-child .btn {
+            border-radius: 0 3px 3px 0;
+        }
+
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 90%;
+        box-sizing: border-box;
+        padding: 1.5em 0;
+        border-radius: 0;
+    }
+}
+
+
+}
+
+
+/*--------------------------------------------------------------
+
+      Media Queries - Smartphone
+
+--------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+
+// mmgr-nav
+
+#header.mmgr-header {
+    margin: 3em 0 5em 0 !important;
+    border-bottom: 0;
+}
+
+.mmgr-nav {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+    text-align: left;
+    font-size: 95%;
+    border-bottom: 1px solid @border;
+
+    ul {
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 30px;
+
+        li {
+            display: inline-block;
+            float: none;
+            margin: 0 1em 0 0;
+            &:first-child {
+                margin-left: 3%;
+            }
+
+            a {
+                padding: 1em 0;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.hatena-bookmark-module {
+    .hatena-bookmark-widget-body {
+        li {
+            height: 9em;
+            margin-bottom: 1em;
+        }
+
+        //abtest
+        &.test-b {
+            li {
+                height: 6em;
+                margin-bottom: 0;
+                width: 50%;
+            }
+        }
+
+    }
+}
+
+.pagenation-index {
+    font-size: 85%;
+}
+
+.mmgr-globalfooter {
+    .logo {
+        display: block;
+    }
+}
+
+.social-share-units {
+    .btn {
+        padding: 1em 0;
+        .label {
+            font-size: 80%;
+        }
+        .count {
+            display: block;
+            margin: .4em 0 0 0;
+        }
+    }
+}
+
+}
