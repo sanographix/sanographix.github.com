@@ -983,6 +983,10 @@ div.likebox-container .fb_iframe_widget span{
         color: @base;
         &:hover {
             color: @link;
+            &:before,
+            &:after {
+                border-color: @link;
+            }
         }
     }
 
@@ -1018,9 +1022,6 @@ div.likebox-container .fb_iframe_widget span{
         -ms-transform: rotate(-135deg);
         border-top: 3px solid @base;
         border-right: 3px solid @base;
-        &:hover {
-            border-color: @link;
-        }
     }
 
     &.pager-arrow-prev:after {
