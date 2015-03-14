@@ -1006,14 +1006,13 @@ div.likebox-container .fb_iframe_widget span{
 // 矢印
 .pager-arrow {
     vertical-align: middle;
-    &:after {
+
+    &.pager-arrow-next:before {
         content: "";
         width: 15px;
         height: 15px;
-        display: block;
-    }
-
-    &.pager-arrow-next:before {
+        display: inline-block;
+        vertical-align: middle;
         transform: rotate(-135deg);
         -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
@@ -1022,6 +1021,11 @@ div.likebox-container .fb_iframe_widget span{
     }
 
     &.pager-arrow-prev:after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        vertical-align: middle;
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
