@@ -47,8 +47,8 @@ LESS Mixins
 
 .inline-block {
     display: inline-block;
-    *display: inline;  
-    *zoom: 1;  
+    *display: inline;
+    *zoom: 1;
 }
 
 .relative {
@@ -158,22 +158,17 @@ LESS Mixins
     -webkit-border-bottom-right-radius: @bottomright;
     -webkit-border-bottom-left-radius: @bottomleft;
     -webkit-border-top-left-radius: @topleft;
-    -moz-border-radius-topright: @topright;
-    -moz-border-radius-bottomright: @bottomright;
-    -moz-border-radius-bottomleft: @bottomleft;
-    -moz-border-radius-topleft: @topleft;
     border-top-right-radius: @topright;
     border-bottom-right-radius: @bottomright;
     border-bottom-left-radius: @bottomleft;
     border-top-left-radius: @topleft;
-    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 }
 
 .border-radius(@radius: 5px) {
     -webkit-border-radius: @radius;
-    -moz-border-radius: @radius;
     border-radius: @radius;
-    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 }
 
 .gradient(@color: #F5F5F5, @start: #FFFFFF, @stop: #EEEEEE) {
