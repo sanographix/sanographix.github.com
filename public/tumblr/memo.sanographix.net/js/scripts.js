@@ -377,3 +377,18 @@ function get_social_count_hatebu(url, counterId) {
     }
   });
 }
+
+// ページの最初の画像をogimageとする
+function img_find() {
+    var imgs = document.getElementsByTagName("img");
+    var imgSrcs = [];
+    for (var i = 0; i < imgs.length; i++) {
+        imgSrcs.push(imgs[i].src);
+    }
+    return imgSrcs;
+}
+var img = img_find();
+var ogmetatag = document.createElement('meta');
+ogmetatag.setAttribute('property', 'og:image');
+ogmetatag.setAttribute('content', img[0]);
+document.head.appendChild(ogmetatag);
