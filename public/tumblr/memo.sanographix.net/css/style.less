@@ -101,6 +101,15 @@ h1,h2,h3,h4,h5,h6 {
     &:hover {
         background-color: darken(@btn-tw, 8%);
     }
+    &.btn-ghost {
+        background-color: transparent;
+        color: @btn-tw;
+        border: 1px solid @btn-tw;
+        &:hover {
+            color: #fff;
+            background-color: @btn-tw;
+        }
+    }
 }
 
 .btn.btn-fb {
@@ -110,6 +119,15 @@ h1,h2,h3,h4,h5,h6 {
     &:hover {
         background-color: darken(@btn-fb, 8%);
     }
+    &.btn-ghost {
+        background-color: transparent;
+        color: @btn-fb;
+        border: 1px solid @btn-fb;
+        &:hover {
+            color: #fff;
+            background-color: @btn-fb;
+        }
+    }
 }
 
 .btn.btn-b {
@@ -118,6 +136,33 @@ h1,h2,h3,h4,h5,h6 {
     border: none;
     &:hover {
         background-color: darken(@btn-b, 8%);
+    }
+    &.btn-ghost {
+        background-color: transparent;
+        color: @btn-b;
+        border: 1px solid @btn-b;
+        &:hover {
+            color: #fff;
+            background-color: @btn-b;
+        }
+    }
+}
+
+.btn.btn-line {
+    color: #fff;
+    background-color: @btn-line;
+    border: none;
+    &:hover {
+        background-color: darken(@btn-line, 8%);
+    }
+    &.btn-ghost {
+        background-color: transparent;
+        color: @btn-line;
+        border: 1px solid @btn-line;
+        &:hover {
+            color: #fff;
+            background-color: @btn-line;
+        }
     }
 }
 
@@ -722,38 +767,22 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-// ソーシャルボタン
+// グローバルフッタのフォローボタン
 
-.social-buttons {
-    margin: 1em 0;
-
-    div,
-    a,
-    iframe {
-        display: inline-block;
-        vertical-align: top !important;
-        margin-right: 4px !important;
-    }
-
-    .fb-like,
-    .fb-share-button {
-        width: 70px !important;
-        display: inline-block !important;
-    }
-}
-
-.follow-button {
+.section-follow {
     border-top: 1px solid @border;
     border-bottom: 1px solid @border;
     padding: .5em 0;
-    .follow-tw,
-    .follow-google {
-        display: inline-block;
-        padding: .5em 0;
+    h4 {
+        margin: .5em 0;
     }
-
-    .follow-tw {
-        margin-right: 1em;
+    > span {
+        display: block;
+        margin: .5em 0;
+        .btn {
+            width: 100%;
+            .border-box;
+        }
     }
 }
 
@@ -1185,6 +1214,7 @@ div.likebox-container .fb_iframe_widget span{
 .mmgr-globalfooter {
     margin-bottom: 0 !important;
     font-size: 90% !important;
+    text-align: center;
     ul {
         padding: 0;
         margin: .5em 0;
