@@ -1,8 +1,0 @@
-/* fuck-IE */
-
-
-/* IE8でヘッダが勝手に折り返される */
-#header h1 {
-  width: 60%\9;
-  overflow: hidden\9;
-}
