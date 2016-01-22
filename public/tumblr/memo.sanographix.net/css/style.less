@@ -199,6 +199,7 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 0 .3em;
     line-height: 1.2;
     font-weight: bold;
+    text-align: center;
     a {
         color: @base;
     }
@@ -214,23 +215,18 @@ h1,h2,h3,h4,h5,h6 {
 // mmgr-nav
 .mmgr-nav {
     font-size: 100%;
-
+    text-align: center;
     ul {
-        .clearfix;
         margin: 0;
         padding: 0;
     }
-
     li {
-        float: left;
+        display: inline-block;
         margin: 0 2em 0 0;
-
         img {
             vertical-align: middle;
         }
-
     }
-
     a {
         text-decoration: none;
         color: @base;
@@ -241,7 +237,6 @@ h1,h2,h3,h4,h5,h6 {
         }
     }
 }
-
 
 // search-form, rss
 .nav-search,
@@ -544,6 +539,10 @@ h1,h2,h3,h4,h5,h6 {
         border-top: 3px solid @border;
     }
 
+}
+
+.video-iframe {
+    margin-bottom: 1em;
 }
 
 // 関連記事
