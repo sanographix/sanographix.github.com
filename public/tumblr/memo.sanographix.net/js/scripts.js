@@ -345,7 +345,7 @@ ogmetatag.setAttribute('property', 'og:image');
 ogmetatag.setAttribute('content', img[0]);
 document.head.appendChild(ogmetatag);
 
-var tw_metatag = document.createElement('meta');
-tw_metatag.setAttribute('property', 'twitter:image');
-tw_metatag.setAttribute('content', img[0]);
-document.head.appendChild(tw_metatag);
+var twimgtag = document.createElement('meta');
+twimgtag.setAttribute('name', 'twitter:image:src');
+twimgtag.setAttribute('content', img[0]);
+document.head.appendChild(twimgtag);
