@@ -113,6 +113,6 @@ ogmetatag.setAttribute('content', img[0]);
 document.head.appendChild(ogmetatag);
 
 var twimgtag = document.createElement('meta');
-twimgtag.setAttribute('name', 'twitter:image:src');
+twimgtag.setAttribute('name', 'twitter:image');
 twimgtag.setAttribute('content', img[0]);
 document.head.appendChild(twimgtag);
