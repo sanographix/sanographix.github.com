@@ -111,3 +111,8 @@ var ogmetatag = document.createElement('meta');
 ogmetatag.setAttribute('property', 'og:image');
 ogmetatag.setAttribute('content', img[0]);
 document.head.appendChild(ogmetatag);
+
+var tw_metatag = document.createElement('meta');
+tw_metatag.setAttribute('property', 'twitter:image');
+tw_metatag.setAttribute('content', img[0]);
+document.head.appendChild(tw_metatag);

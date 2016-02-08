@@ -191,12 +191,12 @@ h1,h2,h3,h4,h5,h6 {
 #header {
     .clearfix;
     margin: 3em 0 3em;
-    border-bottom: 1px solid @border;
+    // border-bottom: 1px solid @border;
 }
 
 .blog-title {
     font-size: 200%;
-    margin: 0 0 .3em;
+    margin: 0 0 .1em;
     line-height: 1.2;
     font-weight: bold;
     text-align: center;
@@ -223,6 +223,9 @@ h1,h2,h3,h4,h5,h6 {
     li {
         display: inline-block;
         margin: 0 2em 0 0;
+        &:last-child {
+            margin-right: 0;
+        }
         img {
             vertical-align: middle;
         }
@@ -338,7 +341,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .entry-content {
     font-size: 105%;
-    line-height: 2;
+    line-height: 1.8;
     margin-bottom: .5em;
 
     a:hover {
@@ -763,6 +766,44 @@ h1,h2,h3,h4,h5,h6 {
             .border-radius(3px);
         }
 
+    }
+}
+
+// 同人とかデザインタグにはバナーを出す
+.dojinshi-banner {
+    display: none; // デフォルトでは隠す
+    margin: 1em auto;
+    &[class*="同人"],
+    &[class*="デザイン"] {
+        display: block;
+    }
+    border: 1px solid lighten(@link,20%);
+    a {
+        padding: .8em;
+        color: @base;
+        display: block;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    h5 {
+        color: @link;
+        margin: 0 0 .5em;
+        font-size: 100%;
+    }
+    img {
+        width: 300px;
+        max-width: 100%;
+        float: left;
+        margin-right: 1em;
+        @media @mq-sm {
+            margin-right: 0;
+            float: none;
+        }
+    }
+    p {
+        font-size: 95%;
     }
 }
 
