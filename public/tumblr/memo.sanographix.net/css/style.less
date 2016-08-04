@@ -818,12 +818,41 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+// 記事フッタのフォローボタン
+.entry-footer-follow {
+    display: table;
+    width: 100%;
+    margin: 1.5em auto;
+    background-color: @bg-light;
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: 90%;
+    > div {
+        display: table-cell;
+        width: 50%;
+        vertical-align: middle;
+        text-align: center;
+        @media @mq-sm {
+            display: block;
+            width: auto;
+        }
+    }
+    .follow-tw,
+    .follow-fb {
+        display: block;
+    }
+    .follow-tw {
+        margin-bottom: 5px;
+    }
+    .btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 // グローバルフッタのフォローボタン
 
 .section-follow {
-    border-top: 1px solid @border;
-    border-bottom: 1px solid @border;
-    padding: .5em 0;
     h4 {
         margin: .5em 0;
     }
