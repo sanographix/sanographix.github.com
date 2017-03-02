@@ -1382,4 +1382,54 @@ div.likebox-container .fb_iframe_widget span{
     margin: 1em 0;
 }
 
+.banner-newBlog {
+    .banner-newBlog-link {
+        display: block;
+        color: #fff;
+        background-color: #1b3b7d;
+        padding: 1em;
+        .clearfix;
+        @media (max-width: 480px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &:hover {
+            background-color: lighten(#1b3b7d, 15%);
+        }
+    }
+    .container {
+        @media (max-width: 480px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    .banner-newBlog-icon {
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+        border-radius: 50%;
+        float: left;
+        margin-right: 10px;
+        @media (max-width: 480px) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .banner-newBlog-header {
+        display: block;
+        font-size: 150%;
+        margin-bottom: .2em;
+        font-weight: bold;
+        @media (max-width: 480px) {
+            font-size: 100%;
+        }
+    }
+    .banner-newBlog-content {
+        display: block;
+        @media (max-width: 480px) {
+            font-size: 70%;
+        }
+    }
+}
+
 @import "_media-queries.less";
