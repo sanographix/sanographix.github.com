@@ -15,6 +15,7 @@ module.exports = function(grunt){
                 },
                 // コンパイルするファイルの指定。左辺には出力先のCSSファイル、右辺には元となるLessファイルへのパス
                 files : {
+                    "css/style.css" : "css/style.less",
                     "loveliver-tee/css/style.css" : "loveliver-tee/css/style.less",
                     "public/tumblr/reblographix2/css/style.css" : "public/tumblr/reblographix2/css/style.less",
                     "public/tumblr/illustfolio/1.3.x/css/style.css" : "public/tumblr/illustfolio/1.3.x/css/style.less",
