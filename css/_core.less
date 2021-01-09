@@ -1,0 +1,44 @@
+html,body {
+    height: 100%; //sticky footer
+}
+body {
+    font-family: 'TTHoves', -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.link {
+    color: @base;
+    text-decoration: none;
+    border-bottom: 1px solid @light;
+    &:hover {
+        color: @hover;
+    }
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    a,a:hover {
+        color: @base;
+        text-decoration: none;
+    }
+}
+.l-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1380px;
+}
+.l-content {
+    flex: 1 0 auto;
+}
+.list {
+    margin: 3rem 0 0;
+    padding: 0;
+    list-style: none;
+    letter-spacing: .025em;
+    line-height: 1.75;
+    font-weight: 500;
+    font-size: 1.5rem;
+    li {
+        margin-bottom: .75rem;
+    }
+}
