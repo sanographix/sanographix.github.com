@@ -1,0 +1,30 @@
+.project-list {
+    display: grid;
+    gap: 44px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    li {
+    }
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 680 / 400;
+        display: block;
+        border-radius: 8px;
+    }
+    h3 {
+        font-size: 24px;
+        margin: 16px 0 8px;
+        font-weight: 500;
+    }
+    p {
+        margin: 0;
+        line-height: 1.5;
+    }
+}
